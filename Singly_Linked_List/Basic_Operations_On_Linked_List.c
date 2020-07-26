@@ -134,11 +134,9 @@ Node DeleteNodeFromLinkedList(Node* Ptr_to_Head,int position){
                 previous_node=current_node;
                 current_node=current_node->next;
             }
-            //if(cnt==position){
                 previous_node->next=current_node->next;
                 printf("Node data to be deleted is: %d\n",current_node->data);
                 free(current_node);
-            //}
         }
     }
     return *Ptr_to_Head;
