@@ -25,7 +25,7 @@ int find_right_max(int arr[], int n, int index){
     return maximum;
 }
 /* 
-arr[]: 
+arr[]: An array consisting of n buildings
 n: Size of the array
 */
 int trap(int* height, int heightSize){
