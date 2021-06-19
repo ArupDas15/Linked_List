@@ -27,3 +27,8 @@
 	<li><code>0 &lt;= n &lt;= 5 * 10<sup>6</sup></code></li>
 </ul>
 </div>
+
+# Solution #
+Using sieve of Eratisthenes.
+
+**Logic:** If you consider two divisors of a composite number then one of the divisiors is definitely less than or equal to square root of n. If we can find one such divisor then the given number is not prime. [Video](https://www.youtube.com/watch?v=NZ7-ntEgt6g&t)
