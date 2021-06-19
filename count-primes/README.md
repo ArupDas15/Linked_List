@@ -31,4 +31,7 @@
 # Solution #
 Using sieve of Eratisthenes.
 
-**Logic:** If you consider two divisors of a composite number then one of the divisiors is definitely less than or equal to square root of n. If we can find one such divisor then the given number is not prime. [Video](https://www.youtube.com/watch?v=NZ7-ntEgt6g&t)
+**Logic:** If you consider two divisors of a composite number then one of the divisiors is definitely less than or equal to square root of n. If we can find one such divisor then the given number is not prime. 
+Reference: This [Video](https://www.youtube.com/watch?v=NZ7-ntEgt6g&t) will explain the logic.
+
+**Time Complexity**: ***O(nloglogn)***
