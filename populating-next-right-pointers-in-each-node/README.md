@@ -38,3 +38,28 @@
 	<li>The number of nodes in the given tree is less than <code>4096</code>.</li>
 	<li><code>-1000 &lt;= node.val &lt;= 1000</code></li>
 </ul></div>
+<h2> Solution </h2>
+The current solution has Time Complexity: O(n) and Space complexity O(1). 
+
+Another solution that we had learnt was having time complexity: O(n) and Space Complexity: O(n). Video Solution: [here](https://www.youtube.com/watch?v=IPEiWlakbjw).
+
+```
+void connect(Node *root)
+    {
+       // Your Code Here
+       queue<Node*>qu;
+       qu.push(root);
+       while(!qu.empty()){
+           int n=qu.size();
+           for(int i=0;i<n;i++){
+               struct Node* fp=qu.front();
+               qu.pop();
+               if(i==n-1)
+                   fp->nextRight=NULL;
+            else fp->nextRight=qu.front();
+               if(fp->left)qu.push(fp->left);
+               if(fp->right)qu.push(fp->right);
+           }
+       }
+    }
+```
