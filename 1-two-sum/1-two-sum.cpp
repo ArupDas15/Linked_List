@@ -11,12 +11,7 @@ public:
 	       if(mp.find(target-arr[i])!=mp.end())
 	       {
 	           ans.push_back(i);
-                for(int j=0;j<n;j++){
-                    // Every input would have exactly one solution, and we want to avoid using                     // the same element twice.
-                    if (arr[j] == target - arr[i] && j!=i){
-                        ans.push_back(j);
-                    }
-                }
+               ans.push_back(mp[target-arr[i]]);
 	       }
 	       mp[arr[i]]=i;
 	   }
