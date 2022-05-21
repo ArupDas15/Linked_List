@@ -7,6 +7,7 @@ using namespace std;
 //User function template for C++
 class Solution{
 public:	
+	// Reference: https://www.youtube.com/watch?v=GrV3MTR_Uk0
 	int longSubarrWthSumDivByK(int arr[], int n, int k)
 	{
 	    int sum = 0;
