@@ -19,17 +19,17 @@ public:
         }
         else{
             ListNode* dummy=nullptr, *next;
-            next = head->next;
-            while(next!=nullptr){
-              head->next = dummy;
-              dummy = head;
-              head= next;  
-              next = head->next;  
+            while(head!=nullptr){
+                next = head->next;
+                head->next = dummy;
+                dummy = head;
+                head= next;  
+                // next = head->next;  
             }
-            if(next==nullptr&&head!=nullptr){
-                head->next=dummy;
-                dummy=head;
-            }
+            // if(next==nullptr&&head!=nullptr){
+            //     head->next=dummy;
+            //     dummy=head;
+            // }
             return dummy;
         }
     }
