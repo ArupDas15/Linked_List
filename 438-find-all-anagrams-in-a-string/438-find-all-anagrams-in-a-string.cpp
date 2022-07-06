@@ -27,7 +27,6 @@ public:
                     if(um[s[i]]==0){
                         count++;
                     }
-                    cout<<s[i];
                     um[s[i]]++;
                 }
                 i++;
