@@ -15,24 +15,21 @@ public:
                     if(um[s[j]]==0)
                         count--;
                 }
-            if(j-i+1<k){
-                
-                j++;
-            }
+            if(j-i+1<k)   
+                j++;       
             else if(j-i+1==k){
-                if(count==0){
+                if(count==0)
                     ans.push_back(i);
-                }
+                
                 if(um.find(s[i])!=um.end()){
-                    if(um[s[i]]==0){
+                    if(um[s[i]]==0)
                         count++;
-                    }
                     um[s[i]]++;
                 }
+                
                 i++;
                 j++;
             }
-                
         }
         
         return ans;
