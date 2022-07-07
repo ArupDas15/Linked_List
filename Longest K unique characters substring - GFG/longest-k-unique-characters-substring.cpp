@@ -37,8 +37,7 @@ class Solution{
              i++;
          } // End of while-loop.
          j++;
-         
-     }// End of for-loop
+     }// End of outer while-loop
      return maxLen;
     }
 };
