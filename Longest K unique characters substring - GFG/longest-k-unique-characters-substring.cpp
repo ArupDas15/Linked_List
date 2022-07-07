@@ -21,6 +21,7 @@ class Solution{
      // Convert input string to lowercase. 
      transform(input.begin(), input.end(), input.begin(), ::tolower);
      while(j<input.length()){
+         // If the character has been encountered for the first time or frequency of the character in the current sliding window is zero.
          if(um.find(input[j])==um.end()||um[input[j]]==0){
              count++;
          }
@@ -34,13 +35,13 @@ class Solution{
              }
              um[input[i]]--;
              i++;
-         }
+         } // End of while-loop.
          if(count==k){
              maxLen=max(maxLen,j-i+1);
          }
          j++;
          
-     }// end of for-loop
+     }// End of for-loop
      return maxLen;
     }
 };
