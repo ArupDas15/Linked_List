@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // Reference Aditya Varma - Variable Sliding Window: https://www.youtube.com/watch?v=L6cffskouPQ&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=11
     int lengthOfLongestSubstring(string s) {
         int i=0;// start index of window.
         int j=0;// end index of window.
@@ -25,3 +26,17 @@ public:
         return maxLen;
     }
 };
+//Alternate Solution
+/*
+int lengthOfLongestSubstring(string s) {
+        vector<int> dict(256, -1);
+        int maxLen = 0, start = -1;
+        for (int i = 0; i != s.length(); i++) {
+            if (dict[s[i]] > start)
+                start = dict[s[i]];
+            dict[s[i]] = i;
+            maxLen = max(maxLen, i - start);
+        }
+        return maxLen;
+    }
+*/
