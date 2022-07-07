@@ -35,6 +35,9 @@ class Solution{
              um[input[i]]--;
              i++;
          }
+         if(count==k){
+             maxLen=max(maxLen,j-i+1);
+         }
          j++;
          
      }// end of for-loop
