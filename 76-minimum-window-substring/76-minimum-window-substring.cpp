@@ -39,8 +39,7 @@ public:
             j++;
         }
         if(minLen<INT_MAX)
-            for(i=min_pos;i<min_pos+minLen;i++)
-                ans.push_back(s[i]); 
+            ans = s.substr(min_pos,minLen);
         return ans;
     }
 };
