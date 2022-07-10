@@ -31,6 +31,11 @@ class Solution
         if(sizeOfStack==0)
             return;
         else{
+            /* We are dividing by 2.0 and not 2 although 2 is specified in the question because 
+            when we divide by 2 ceil will have no effect as the number is already reduced to floor.
+            For e.g., say, sizeOfStack=12, then k=6 if we divide by 2 but if we divide by 2.0 then 
+            k=7 because of type promotion.
+            */
             int k = ceil((sizeOfStack+1)/2.0); 
             solve(s,k);
         }
