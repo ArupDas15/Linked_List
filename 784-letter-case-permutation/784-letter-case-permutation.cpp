@@ -16,7 +16,6 @@ public:
         }
         else{
             op1.push_back(ip[0]);
-            op2.push_back(ip[0]);
             ip.erase(ip.begin()+0);
             solve(ip,op1,ans);
         }
