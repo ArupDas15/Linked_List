@@ -35,7 +35,7 @@ public:
 
 int main(){
 	int t;
-	cin>>tl
+	cin>>t;
 	while(t--){
 		string S;
 		cin>>S;
