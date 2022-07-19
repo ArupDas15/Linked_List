@@ -2,7 +2,7 @@
 Perfect Sum Problem- Medium- https://practice.geeksforgeeks.org/problems/perfect-sum-problem5633/1
 Given an array arr[] of non-negative integers and an integer sum, the task is to count all subsets of the given array with a sum equal to a given sum.
 
-Note: Answer can be very large, so, output answer modulo 109+7
+Note: Answer can be very large, so, output answer modulo 10^9+7
 
 Example 1:
 
