@@ -18,7 +18,6 @@ public:
                 }
             }
         }
-        cout<<"sum= "<<sum<<"; "<<t[n][sum]<<endl;
         return t[n][sum];
 	}
     int findTargetSumWays(vector<int>& nums, int target) {
