@@ -60,7 +60,7 @@ class Solution{
                 }
             }
         }
-        for(int i = 0; i <= (Range/2); i++){
+        for(int i = 0; i < (Range/2) + 1; i++){
             if(t[n][i] == true)
             s1_candidates.push_back(i);
         }
