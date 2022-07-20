@@ -26,7 +26,7 @@ public:
             sum = sum + nums[i];
         }
 
-        if((sum+target)%2!=0)
+        if((abs(sum+target))%2!=0)
             return 0;
         return countOfSubsetSum(nums,nums.size(),abs((sum+target)/2));
     }
