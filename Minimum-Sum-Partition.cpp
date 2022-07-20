@@ -40,6 +40,8 @@ using namespace std;
 class Solution{
 
   public:
+    /* In this the Space Complexity is O(N*sum(Array elemnets)). We can reduce the space complexity to O(sum(Array elements)).
+    
     vector<int> subsetSum(int arr[],int n, int Range){
         int t[n + 1][(Range/2) + 1];
         vector<int> s1_candidates;
@@ -76,6 +78,43 @@ class Solution{
 	    int ans = INT_MAX;
 	    // Find the minimum sum partition.
 	    for(int i = 0; i < s1_candidates.size(); i++){
+	        ans = min( ans, Range - (2*s1_candidates[i]));
+	    }
+	    return ans;
+	}
+    */
+	// Solution with space complexity: O(sum(Array elements))
+	vector<int> subsetSum(int arr[],int n, int Range){
+        int t[n + 1][(Range/2) + 1];
+        vector<int> s1_candidates;
+        vector<int> prev((Range/2) + 1,false), cur((Range/2) + 1,false);
+        prev[0]=true;
+        cur[0]=true;
+        for(int i = 1; i < n + 1; i++){
+            for(int j = 1; j < (Range/2) + 1 ;j++){
+                if(arr[i - 1] <= j){
+                    cur[j] = prev[j-arr[i-1]] || prev[j];
+                }
+                else{
+                    cur[j] = prev[j];
+                }
+            }
+            prev = cur;
+        }
+        for(int i = 0; i < (Range/2) + 1; i++){
+            if(cur[i] == true)
+            s1_candidates.push_back(i);
+        }
+        return s1_candidates;
+    }
+	int minDifference(int arr[], int n)  { 
+	    int Range = 0;
+	    for(int i = 0; i < n; i++){
+	        Range = Range + arr[i];
+	    }
+	    vector<int> s1_candidates = subsetSum(arr, n, Range);
+	    int ans = INT_MAX;
+	    for(int i = s1_candidates.size() - 1; i >= 0; i--){
 	        ans = min( ans, Range - (2*s1_candidates[i]));
 	    }
 	    return ans;
