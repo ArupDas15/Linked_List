@@ -41,17 +41,17 @@ class Solution{
 
   public:
     vector<int> subsetSum(int arr[],int n, int Range){
-        int t[n + 1][Range + 1];
+        int t[n + 1][(Range/2) + 1];
         vector<int> s1_candidates;
         
-        for(int i = 0; i < Range + 1; i++){
+        for(int i = 0; i < (Range/2) + 1; i++){
             t[0][i] = false;
         }
         for(int i = 0;i < n + 1; i++){
             t[i][0] = true;
         }
         for(int i = 1; i < n + 1; i++){
-            for(int j = 1; j < Range + 1 ;j++){
+            for(int j = 1; j < (Range/2) + 1 ;j++){
                 if(arr[i - 1] <= j){
                     t[i][j] = t[i-1][j-arr[i-1]] || t[i-1][j];
                 }
@@ -60,7 +60,7 @@ class Solution{
                 }
             }
         }
-        for(int i = 0; i <= Range/2; i++){
+        for(int i = 0; i <= (Range/2); i++){
             if(t[n][i] == true)
             s1_candidates.push_back(i);
         }
