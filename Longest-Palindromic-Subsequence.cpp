@@ -37,6 +37,8 @@ class Solution{
   public:
     int longestPalinSubseq(string A) {
         int n = A.length();
+        // Passing reverse iterators to the constructor returns us a reversed string. 
+        // https://www.geeksforgeeks.org/reverse-a-string-in-c-cpp-different-methods/
         string B = string(A.rbegin(), A.rend());
         int t[n+1][n+1];
         for(int i = 0; i < n + 1; i++){
