@@ -65,7 +65,7 @@ public:
     }
 };
 */
-// Not optimised memoised solution.
+// Not optimised memoised solution. This solution got accepted in geeksforgeeks.
 /*
 static int t[501][501];
 class Solution{
@@ -106,7 +106,6 @@ public:
 };
 */
 //Optimised Memoised Code which got accepted in InterviewBit.
-static int t[501][501];
 class Solution{
 public:
     int isPalindrome(string &S, int i, int j ){
@@ -122,7 +121,7 @@ public:
         }
         return 1;
     }
-    int solve(string &s, int i, int j){
+    int solve(string &s, int i, int j, vector<vector<int>> &t){
         if(i >= j || isPalindrome(s, i, j))
             return 0;
         if(t[i][j] != -1)
@@ -133,13 +132,13 @@ public:
             if(t[i][k] != -1)
                 left = t[i][k];
             else{
-                left = solve(s,i,k);
+                left = solve(s, i, k, t);
                 t[i][k] = left;
             }
             if(t[k + 1][j] != -1)
                 right = t[k + 1][j];
             else{
-                right = solve(s,k + 1, j);
+                right = solve(s, k + 1, j, t);
                 t[k + 1][j] = right;
             }
             temp_ans = 1 + left + right;
@@ -149,9 +148,7 @@ public:
     }
     int palindromicPartition(string str)
     {
-        for(int i = 0; i<str.length()+1;i++)
-            for(int j = 0; j<str.length()+1;j++)
-                t[i][j]=-1;
-        return solve(str, 0, str.length()-1);
+        vector<vector<int>> t(A.size()+1,vector<int>(A.size()+1,-1));
+        return solve(str, 0, str.length() - 1, t);
     }
 }; 
