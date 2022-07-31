@@ -100,6 +100,7 @@ int Solution::isScramble(const string A, const string B) {
 
 */
 // Memoised Solution.
+// Reference: https://www.youtube.com/watch?v=VyHEglhbm-A&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=41
 bool solve(const string A, const string B, unordered_map<string, bool> &mp){
     if(A.compare(B) == 0)
         return true;
