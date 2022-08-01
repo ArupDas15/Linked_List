@@ -27,6 +27,8 @@ public:
     int diameterOfBinaryTree(TreeNode* root) {
         int res = INT_MIN;
         solve(root, res);
+        // Number of edges between any two nodes in a Directed Acyclic Graph
+        // like binary tree is number of nodes in the path - 1.
         return res-1;
     }
 };
