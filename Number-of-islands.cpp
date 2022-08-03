@@ -57,7 +57,7 @@ using namespace std;
 class Solution {
   public:
   bool isValid(int i, int j, int n, int m){
-      if((i >= 0 && i<n) && (j>=0 && j < m))
+      if((i >= 0 && i < n) && (j >= 0 && j < m))
         return true;
       return false;
   }
@@ -94,7 +94,7 @@ class Solution {
         int m = grid[0].size();
         int count = 0;
         vector<vector<bool>> visited(n,vector<bool>(m,false));
-        for(int i = 0;i<n;i++){
+        for(int i = 0;i < n;i++){
             for(int j = 0;j < m; j++){
                 if(grid[i][j] == '1'){
                     pair<int,int> element(i,j);
