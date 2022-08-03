@@ -31,7 +31,8 @@ The grid is-
 There are two islands :- one is colored in blue 
 and other in orange.
 Your Task:
-You don't need to read or print anything. Your task is to complete the function numIslands() which takes the grid as an input parameter and returns the total number of islands.
+You don't need to read or print anything. Your task is to complete the function numIslands() which takes the grid as an input parameter and returns the total number 
+of islands.
 
 Expected Time Complexity: O(n*m)
 Expected Space Complexity: O(n*m)
@@ -39,10 +40,15 @@ Expected Space Complexity: O(n*m)
 Constraints:
 1 ≤ n, m ≤ 500
 
+--------------
+MY NOTES
+--------------
 This question is an alternative way of asking: find the number of connected components in an undirected/directed graph.
-The approach I liked in this question is how we are checking for valid neighbors of a vertex. We considered all the eight neighbors while checking for the valid neighbors.
-Also, since the grid is not a square grid so we could not store the vertex of the graph in conventional way, rather we had to store the row and column of the vertex as a pair in the queue data structure.
-This was also the reason why we needed to use a 2D visited array. However we could have used two one-dimensional visited array for marking the row and column index of the visited vertex.
+The approach I liked in this question is how we are checking for valid neighbors of a vertex. We considered all the eight neighbors while checking for the valid 
+neighbors. Also, since the grid is not a square grid so we could not store the vertex of the graph in conventional way, rather we had to store the row and column 
+of the vertex as a pair in the queue data structure. This was also the reason why we needed to use a 2D visited array. However we could have used two one-dimensional 
+visited array for marking the row and column index of the visited vertex.
+
 */
 
 #include <bits/stdc++.h>
