@@ -46,6 +46,8 @@ Reference: Just see the video by Sandeep Jain Sir in the article: https://www.ge
 using namespace std;
 class Solution {
   public:
+  // Note: If you had not passed visited and recStk vectors through &(references) it would have still worked but it would have thrown TLE error after 263rd test case. 
+  // Passing by reference makes it faster. 
   bool DFSRec(vector<int> adj[], int s, vector<bool> &visited, vector<bool> &recStk){
           visited[s]=true;
           recStk[s]=true;
