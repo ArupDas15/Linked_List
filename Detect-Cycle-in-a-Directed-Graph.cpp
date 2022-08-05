@@ -35,8 +35,8 @@ Constraints:
 -----------
 MY NOTES
 -----------
-We cannot use the algorithm we used for detecting cycle in undirected graph as it is because you can reach the same node through different nodes in an undirected graph and still not have a cycle simply because the directions are not bi-directional.
-Hence we use the concept of backedge i.e. if a node points to its ancestor i.e. say its parent, itself or other predecessors then we can conclude that the graph contains a cycle. 
+We cannot use the algorithm we used for detecting cycle in undirected graph as it is because you can reach the same node through different nodes in a directed graph and still not have a cycle simply because the directions are not bi-directional.
+Hence we use the concept of back edge i.e. if a node points to its ancestor i.e. say its parent, itself or other predecessors then we can conclude that the graph contains a cycle. 
 So for detecting cycle in an undirected graph we must check if there is any back edge in the graph.
 
 Reference: Just see the video by Sandeep Jain Sir in the article: https://www.geeksforgeeks.org/detect-cycle-in-a-graph/
