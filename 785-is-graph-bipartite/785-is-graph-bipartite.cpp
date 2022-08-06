@@ -12,7 +12,7 @@ public:
             for(int v:graph[u]){
                 if(color[v]==-1){
                     q.push(v);
-                    color[v]=(1-color[u]);
+                    color[v]=(1^color[u]);
                 }
                 else if(color[v]==color[u])
                     return false;
