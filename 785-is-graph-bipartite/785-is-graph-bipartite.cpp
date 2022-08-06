@@ -1,6 +1,6 @@
 class Solution {
 public:
-    // Retruns false if the graph is not biparitite
+    // Returns false if the graph is not biparitite
     bool bfs(vector<vector<int>>& graph, int s, vector<int>&color){
         queue<int> q;
         int u;
