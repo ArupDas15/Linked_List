@@ -21,7 +21,7 @@ Graph is connected and doesn't contain self loops & multiple edges.
 
 Video Solution Reference: https://www.youtube.com/watch?v=oNTsS8lGDHw&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=20
 */
-
+// Solution using Prim's Algorithm which uses Priority queue and adjacency list.
 #include<bits/stdc++.h>
 using namespace std;
 
