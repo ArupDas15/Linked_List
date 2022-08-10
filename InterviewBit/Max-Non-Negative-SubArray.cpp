@@ -87,23 +87,26 @@ return elements of max range
 */
 // Time Complexity: O(n)
 vector<int> Solution::maxset(vector<int> &A) {
+    // We use long long int to avoid overflow problems that would occur when adding two large int variables.
     long long int sum= 0 , max_sum=INT_MIN;
     int i = 0, j =0,startindex,mini_len=INT_MIN;
     vector<int>ans;
     while(j<A.size()){
+        // IF current element is non-negative
         if(A[j]>=0){
+            // update the current sum.
             sum=sum+A[j];
+            // update maximum sum if current sum is greater than maximum sum
             if(max_sum<sum){
                 max_sum=sum;
                 startindex=i;
                 mini_len=j-i+1;
             }
-            else if(max_sum==sum && mini_len<j-i+1){
+            //If maximum sum == current sum, then compare with segment's length and return segment which has maximum length.
+            //If there is still a tie, then the segment with minimum starting index will be returned because we are starting from i=0.
+            else if(max_sum==sum && mini_len<j-i+1)
                 startindex = i;
                 mini_len=j-i+1;
-            }
-            else if(max_sum==sum && mini_len==j-i+1){
-                startindex=min(startindex,i);
             }
             j++;
         }
@@ -114,11 +117,9 @@ vector<int> Solution::maxset(vector<int> &A) {
                 i=j;
             }
         }
-        
     }
-    for(int i = 0;i<mini_len;i++){
+    for(int i = 0;i<mini_len;i++)
         ans.push_back(A[startindex+i]);
-        // cout<<A[startindex+i]<<" ";
-    }    
+    
     return ans;
 }
