@@ -18,6 +18,7 @@ NOTE : DO NOT USE LIBRARY FUNCTIONS
 Note:You only need to implement the given function. Do not read input, instead use the arguments to the function. Do not print the output, instead return values as specified. Still have a question? Checkout Sample Codes for more details.
 */
 // Time Complexity: O(log(min(a, b))
+// Reference: https://www.geeksforgeeks.org/time-complexity-of-euclidean-algorithm/
 
 int Solution::gcd(int a, int b) {
     if(b ==0) return a;
