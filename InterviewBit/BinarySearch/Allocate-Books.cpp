@@ -55,6 +55,16 @@ Note:You only need to implement the given function. Do not read input, instead u
 Reference: https://www.youtube.com/watch?v=gYmWHvRHu-s
 */
 // Time Complexity: O(N * log(sumOfArrElements - max_element_in_arr))
+// ---------------------------------------------------------------------
+//                              MY NOTES
+// ---------------------------------------------------------------------
+// We can solve this problem using recursion which will take exponential time. We can that afurther using dynamic programming which take O(N^2) time.
+// But as per Striver's suggestion we can directly jump to approaching this problem using Binary Search as the previous approahces will take a lot of time to solve and explain.
+// Binary search helps to reduce the search space.
+// The solution approach is to find the number of students we need if we fix that one student can read atmost V number of pages. We traverse the array A[] completely 
+// and see how many students we can allocate atmost V pages. If the number of students we have assigned is more than B then we increase V(because this means a
+// student has to read more than V pages) and check again else if we can successfully assign B students to at most V pages we reduce V and check again.
+// We search again by reducing V(the barrier) because our goal is to find the minimum out of all the maximum pages that can be allocated to a student.
 
 #include<numeric> // We are using this library for accumulate().
 bool isAllocationPossible(vector<int> &A, int B, int V){
@@ -64,6 +74,7 @@ bool isAllocationPossible(vector<int> &A, int B, int V){
         if(sum+b>V){
             cnt_of_student++;
             sum=b;
+            // No. of pages allocated to a student is less. So increase the number of pages assigned i.e. increase low(the barrier).
             if (cnt_of_student > B) 
                 return false;
         }
@@ -85,7 +96,7 @@ int Solution::books(vector<int> &A, int B) {
         mid  = low + ((high-low)/2);
         if(isAllocationPossible(A,B,mid)){
             ans = mid;
-            high = mid - 1;
+            high = mid - 1; // Check if you can allocate lesser number of pages to a student by decreasing high(the barrier).
         }
         else low = mid + 1;
     }
