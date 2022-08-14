@@ -23,9 +23,11 @@ The division process is just the simulation of human division process.
 Start from the first digit. If the current digit is less than 2, then we append the next digit to current digit, and append 0 to our answer.
 
 NOTE: In this question, it is given that the number length can be more than 64, however if the number was an integer then we could have hecked if (n&(n-1))==0. 
-If it is 0 then the number is power of 2. E.g. 4&3==0 so 4 is a power of 2. The solution for such type of question is given here: https://github.com/ArupDas15/Linked_List/tree/master/231-power-of-two 
+If it is 0 then the number is power of 2. E.g. 4&3==0 so 4 is a power of 2. The solution for such type of question is given here: 
+https://github.com/ArupDas15/Linked_List/tree/master/231-power-of-two 
 Time complexity with integer as input would be O(1) and space complexity would be O(1).
 */
+
 // Time complexity: O(n), space complexity: O(1)
 bool checkeven(char x){
     if((int(x)-48)%2==0)
