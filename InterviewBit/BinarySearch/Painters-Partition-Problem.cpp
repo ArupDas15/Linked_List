@@ -54,9 +54,9 @@ Note:You only need to implement the given function. Do not read input, instead u
 // A board has to be painted by only one painter.
 // The boards should be allocated in contiguous manner to the painter.
 // Every board will be allocated to a painter.
-// Hence we keep assigning boards to painter greedily till the time taken < mid. If you run out of painters, isPossible = false.
-else isPossible = true.
+// Hence we keep assigning boards to painter greedily till the time taken < mid. If you run out of painters, isPossible = false, else isPossible = true.
 // Time Complexity: O(N*log(max_element_in_C-sumOfElementsinC))
+
 bool isPossible(int A, int B, vector<int>&C, int time_taken){
     int cnt= 1;
     int sum = 0; // sum stores the time taken by a painter.
