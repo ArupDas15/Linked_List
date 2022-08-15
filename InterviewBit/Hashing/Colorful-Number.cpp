@@ -35,7 +35,7 @@ int Solution::colorful(int A) {
         // starting point to current ending
         // point. 
         // Reference: https://www.geeksforgeeks.org/program-print-substrings-given-string/
-        // Time Complexity: O(n^3) for subtring generation, Space complexity: O(n) for products
+        // Time Complexity: O(n^3) for subtring generation, Space complexity: O(n) for storing the products.
         for (int len = 1; len <= n - i; len++){
             num = stoi(str.substr(i, len));
             product=1;
