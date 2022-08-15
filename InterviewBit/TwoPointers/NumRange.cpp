@@ -38,7 +38,7 @@ int countSubarray(vector<int> &A, int k)
         int sum = 0;
         for (int j = i; j < n; j++) {
  
-            // If sum is less than k
+            // If sum is less than or equal to k
             // then update sum and
             // increment count
             if (sum + A[j] <= k) {
