@@ -62,7 +62,8 @@ vector<int> Solution::nextGreater(vector<int> &A) {
         return ans;
     }
      for (int i = n - 1; i >= 0; i--) {
-   /* if stack is not empty, then
+   /* We iterate backwards instead from front because in some cases the output elements would not be produced in the same order as the input. E.g. A : [11, 13, 21, 3].
+    if stack is not empty, then
         pop elements from stack until stack top > A[i]
         (i.e. keep popping until element in stack is greater than current array element under consideration).
         If the stack gets empty in this process then no elements was found to be nextgreater than A[i].
