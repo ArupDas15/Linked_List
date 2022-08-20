@@ -36,6 +36,7 @@ Explanation 2:
 int Solution::maxSubArray(const vector<int> &A) {
     int max_sum = 0;
     int sum=0,i;
+    // Check if all the elements in the array are negative. If so, then return the leat negative element.
     for( i=0;i<A.size();i++){
         if(A[i]<0)continue;
         else break;
