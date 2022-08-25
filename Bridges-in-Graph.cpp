@@ -1,6 +1,9 @@
 // Reference: Watch Jenny's lecture first: https://www.youtube.com/watch?v=CsGP_s_3GWg 
 // then watch Striver's video for code: https://www.youtube.com/watch?v=2rjZH0-2lhk&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=25
-
+/*
+An edge in an undirected connected graph is a bridge if removing it disconnects the graph. For a disconnected undirected graph, definition is similar, a bridge 
+is an edge removing which increases number of disconnected components. Here we will find all the bridges in the undirected connected graph.
+*/
 /* APPROACH: For every node in the graph, we will maintain two things: 
 	1. Discovery time: What time the node was discovered during the dfs() traversal.
 	2. Lowest Finish time: Before backtracking to its parent node (the node which called dfs() on this node), the current node finds the lowest finish time 
