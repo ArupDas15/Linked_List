@@ -1,6 +1,20 @@
 // Reference: Watch Jenny's lecture first: https://www.youtube.com/watch?v=CsGP_s_3GWg 
 // then watch Striver's video for code: https://www.youtube.com/watch?v=2rjZH0-2lhk&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=25
 
+/* APPROACH: For every node in the graph, we will maintain two things: 
+	1. Discovery time: What time the node was discovered during the dfs() traversal.
+	2. Lowest Finish time: Before backtracking to its parent node (the node which called dfs() on this node), the current node finds the lowest finish time 
+			       amongst all its adjacent nodes except its parent node becuase if it gets a lower finish time than its parent node, then it means 
+			       that the current node can be connected to the graoh without the edge connecting itself to the parent node i.e. this node can be 
+			       visited by some other node in the graph which is not its parent node. So the removal of edge between the parent node and the 
+			       current node will not form a bridge. 
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------
+ | A bridge is formed only the lowest finishing time of the current node (obtained by considering the finishing time of all adjacent nodes of a current node | 
+ | except the finshing time of parent node) is greater than the discovering time of its parent node because this means the current node cannot be discovered |
+ | by any other node in the graph.															     |
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+// Time Complexity: O(V+E), Space Complexity: O(V)
 #include<bits/stdc++.h>
 using namespace std;
 
