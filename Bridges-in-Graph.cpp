@@ -5,14 +5,14 @@
 	1. Discovery time: What time the node was discovered during the dfs() traversal.
 	2. Lowest Finish time: Before backtracking to its parent node (the node which called dfs() on this node), the current node finds the lowest finish time 
 			       amongst all its adjacent nodes except its parent node becuase if it gets a lower finish time than its parent node, then it means 
-			       that the current node can be connected to the graoh without the edge connecting itself to the parent node i.e. this node can be 
+			       that the current node can be connected to the graph without the edge connecting itself to the parent node i.e. this node can be 
 			       visited by some other node in the graph which is not its parent node. So the removal of edge between the parent node and the 
 			       current node will not form a bridge. 
- -------------------------------------------------------------------------------------------------------------------------------------------------------------
- | A bridge is formed only the lowest finishing time of the current node (obtained by considering the finishing time of all adjacent nodes of a current node | 
- | except the finshing time of parent node) is greater than the discovering time of its parent node because this means the current node cannot be discovered |
- | by any other node in the graph.															     |
- -------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ | A bridge is formed only when the lowest finishing time of the current node (obtained by considering the finishing time of all adjacent nodes of a current node | 
+ | except the finshing time of its parent node) is greater than the discovering time of its parent node. Because this means, the current node cannot be discovered|
+ | by any other node in the graph.															          |
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 // Time Complexity: O(V+E), Space Complexity: O(V)
 #include<bits/stdc++.h>
@@ -22,16 +22,16 @@ void dfs(int node, int parent, vector<int> &vis, vector<int> &discovery_time, ve
 	vis[node] = 1;
 	discovery_time[node] = lowest_finish_time[node] = timer++;
 	for(auto it: adj[node]){
-	    // If the adjacent node is a parent node then as per the Bridge detecting algorithm you do not visit the parent
-	    // node before backtracking neither do you check its finishing time, so we skip the parent node.
+	    // If the adjacent node is a parent node then as per the Bridge Detecting Algorithm, we do not visit the parent
+	    // node before backtracking neither do we check its finishing time, so we skip the parent node.
 		if(it == parent)
 			continue;
-		// Perform a dfs operation on the adjacent node if it is not visited.
+		// Perform a dfs operation on the adjacent node of the current node if it is not visited.
 		if(!vis[it]){
+			// The parent node of the unvisited adjacent node will be the current node. So instead of -1 we pass node in dfs(it).
 			dfs(it, node, vis, discovery_time, lowest_finish_time, timer, adj);
-			// Update the finishing time of the parent node (i.e. the current
-			// node) after comparing the finishing time of the adjacent node
-			// which is computed via the dfs().
+			// Update the finishing time of the parent node (i.e. the current node) after comparing with the finishing time of the adjacent node
+			// which is computed via the dfs(it).
 			lowest_finish_time[node] = min(lowest_finish_time[node], lowest_finish_time[it]);
 			if(lowest_finish_time[it] > discovery_time[node])
 				cout<<"Bridge: " <<node+1<< " "<< it+1 << endl;
@@ -46,8 +46,7 @@ int main(){
 	cin >> n;
 	cin >> m;
 	vector<int> adj[n];
-
-  for(int i = 0; i < m; i++){
+  	for(int i = 0; i < m; i++){
 		int u, v;
 		cin>> u;		
 		cin>> v;
@@ -55,8 +54,7 @@ int main(){
 		adj[v-1].push_back(u-1);
 		cout<<"Edge created: "<<u<<" "<<v<<endl;
 	}
-
-  vector<int> discovery_time(n, -1);
+  	vector<int> discovery_time(n, -1);
 	vector<int> lowest_finish_time(n, -1);
 	vector<int> vis(n, 0);
 	int timer = 0;
