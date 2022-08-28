@@ -93,12 +93,12 @@ void Graph::SCCUtil(int u, int disc[], int low[], stack<int> *st,
     { 
         while (st->top() != u) 
         { 
-            w = (int) st->top(); 
+            w = st->top(); 
             cout << w << " "; 
             stackMember[w] = false; 
             st->pop(); 
         } 
-        w = (int) st->top(); 
+        w = st->top(); 
         cout << w << "\n"; 
         stackMember[w] = false; 
         st->pop(); 
@@ -142,3 +142,12 @@ int main()
 
 	return 0; 
 } 
+
+/*
+	OUTPUT
+      ----------
+SCCs in the graph 
+4
+3
+1 2 0
+*/
