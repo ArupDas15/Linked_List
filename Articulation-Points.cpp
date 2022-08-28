@@ -9,6 +9,9 @@ Observation 2: A non-root node 'u' (denoted by parent!=-1) is an articulation po
               'v' is unable to reach any of the ancestors of 'u'. If low[v]=tim[node], then it means we can almost reach 'v' from 'u' and no node before 'u'.
 Time Complexity: O(V+E)
 Space Complexity: O(V)
+
+Reference: GFG: https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/
+	   Striver: https://www.youtube.com/watch?v=3t3JHswP7mw&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw
 */
 include <bits/stdc++.h>
 using namespace std;
