@@ -15,22 +15,22 @@ Reference: GFG: https://www.geeksforgeeks.org/articulation-points-or-cut-vertice
 */
 include <bits/stdc++.h>
 using namespace std;
-void dfs(int node, int parent, vector<int> &vis, vector<int> &tin, vector<int> &low, int &timer, vector<int> adj[], vector<int> &isArticulation) {
+void dfs(int node, int parent, vector<int> &vis, vector<int> &disc, vector<int> &low, int &timer, vector<int> adj[], vector<int> &isArticulation) {
     vis[node] = 1; 
-    tin[node] = low[node] = timer++;
+    disc[node] = low[node] = timer++;
     int child = 0; 
     for(auto it: adj[node]) {
         if(it == parent) continue;
         
         if(!vis[it]) {
-            dfs(it, node, vis, tin, low, timer, adj, isArticulation); 
+            dfs(it, node, vis, disc, low, timer, adj, isArticulation); 
             low[node] = min(low[node], low[it]); 
 	    child++; 
-            if(low[it] >= tin[node] && parent != -1) {
+            if(low[it] >= disc[node] && parent != -1) {
                 isArticulation[node] = 1; 
             }
         } else {
-            low[node] = min(low[node], tin[it]); 
+            low[node] = min(low[node], disc[it]); 
         }
     }
     
@@ -49,14 +49,14 @@ int main() {
 	    adj[v].push_back(u); 
 	}
 	
-	vector<int> tin(n, -1);
+	vector<int> disc(n, -1);
 	vector<int> low(n, -1); 
 	vector<int> vis(n, 0);
 	vector<int> isArticulation(n, 0); 
 	int timer = 0; 
 	for(int i = 0;i<n;i++) {
 	    if(!vis[i]) {
-	        dfs(i, -1, vis, tin, low, timer, adj, isArticulation); 
+	        dfs(i, -1, vis, disc, low, timer, adj, isArticulation); 
 	    }
 	}
 	
