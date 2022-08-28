@@ -5,8 +5,8 @@ We need to find the articulation points in the given undirected graph.
 There are two observations to be made:
 Observation 1: A root node (i.e. starting node) in a DFS traversal is an articulation point if it has two children. Hence the case child>1 && parent==-1. 
                Here child indicates the number of DFS calls made after visiting the root node.
-Observation 2: A non-root node 'u' (denoted by parent!=-1) is an articulation point if there exists a child node 'v' such that low[v]>=tim[node], i.e. the node 
-              'v' is unable to reach any of the ancestors of 'u'. If low[v]=tim[node], then it means we can almost reach 'v' from 'u' and no node before 'u'.
+Observation 2: A non-root node 'u' (denoted by parent!=-1) is an articulation point if there exists a child node 'v' such that low[v]>=disc[node], i.e. the node 
+              'v' is unable to reach any of the ancestors of 'u'. If low[v]=disc[node], then it means we can almost reach 'v' from 'u' and no node before 'u'.
 Time Complexity: O(V+E)
 Space Complexity: O(V)
 
