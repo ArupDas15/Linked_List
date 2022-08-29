@@ -26,7 +26,7 @@ class Solution
 {
 	public:
 	// Notice here that unlike the approach of disc and low in articulation points and brdges we are not passing the parent information over here because
-	// the objective is not to find weak points or edges in the graph reather it is to find strongly connected components. 
+	// the objective is not to find critical vertices or edges in the graph rather it is to find strongly connected components. 
 	void SCCUtil(int u, vector<int>&disc, vector<int>&low, stack<int> &st, vector<bool> &recStk, int &timer, vector<int>adj[], vector<vector<int>>&SCC_ans){ 
       // Initialize discovery time and low value 
       disc[u] = low[u] = ++timer; 
