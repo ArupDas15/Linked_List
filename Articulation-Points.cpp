@@ -66,3 +66,13 @@ int main() {
 	
 	return 0;
 }
+/*	Biconnected Component - Variation of articulation points
+	**READ THIS**: https://www.cdn.geeksforgeeks.org/biconnectivity-in-a-graph/
+	A connected graph is Biconnected if it is connected and doesn’t have any Articulation Point. We mainly need to check two things in a graph. 
+	1. The graph is connected. 
+	2. There is no articulation point in graph.
+	We start from any vertex and do DFS traversal. In DFS traversal, we check if there is any articulation point. If we don’t find any articulation point, 
+	then the graph is Biconnected. Finally, we need to check whether all vertices were reachable in DFS or notby cehcking if there is any unvisited vertex 
+	left by traversing the visited array(i.e. if(visited[i]==flase for i between 0 to V then the graph is not conected.)). If all vertices were not reachable, 
+	then the graph is not even connected. 
+*/
