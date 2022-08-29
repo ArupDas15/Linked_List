@@ -7,7 +7,7 @@ There is no back edge from one SCC to another (There can be cross edges, but cro
 Time Complexity: O(V+E)
 Space Complexity: O(V)
 */
-
+// To see the apporach using adjacency list represented using a vector look over here: https://github.com/ArupDas15/Linked_List/blob/master/Tarjans-Algo.cpp-GFG.cpp
 #include<iostream> 
 #include <list> 
 #include <stack> 
