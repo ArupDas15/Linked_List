@@ -3,7 +3,7 @@ Strongly connected component (Tarjans's Algo) - Hard- https://practice.geeksforg
 Given a Directed Graph with V vertices and E edges, Find the members of strongly connected components in the graph.
 Your Task:
 You don't need to read input or print anything. Your task is to complete the function tarjans() which takes the number of vertices V and adjacency list of the graph as input parameters and returns a list of list of integers denoting the members of strongly connected components in the given graph.
-Note: A single strongly connected component must be represented in the form of a list if integers sorted in the ascending order. The resulting list should consist of a list of all SCCs which must be sorted in a way such that a lexicographically smaller list of integers appears first.
+Note: A single strongly connected component must be represented in the form of a list of integers sorted in the ascending order. The resulting list should consist of a list of all SCCs which must be sorted in a way such that a lexicographically smaller list of integers appears first.
 
 Expected Time Complexity: O(V + E).
 Expected Auxiliary Space: O(V).
@@ -25,6 +25,8 @@ bool compare1(vector<int> v1, vector<int> v2)
 class Solution
 {
 	public:
+	// Notice here that unlike the approach of disc and low in articulation points and brdges we are not passing the parent information over here because
+	// the objective is not to find weak points or edges in the graph reather it is to find strongly connected components. 
 	void SCCUtil(int u, vector<int>&disc, vector<int>&low, stack<int> &st, vector<bool> &recStk, int &timer, vector<int>adj[], vector<vector<int>>&SCC_ans){ 
       // Initialize discovery time and low value 
       disc[u] = low[u] = ++timer; 
