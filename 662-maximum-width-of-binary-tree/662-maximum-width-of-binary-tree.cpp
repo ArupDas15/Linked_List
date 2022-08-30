@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Reference: https://www.youtube.com/watch?v=ZbybYvcVLks
+// Leetcode discussion: https://leetcode.com/problems/maximum-width-of-binary-tree/discuss/1803302/C%2B%2Bor-Detailed-Explanation-w-WHY-oror-Covering-Integer-overflow-conditionor-DRY-RUN
 #include<bits/stdc++.h>
 class Solution {
 public:
