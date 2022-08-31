@@ -18,7 +18,7 @@ struct Node {
 	int data;
 };
 
-// A function that converts a Binary Tree to Doubly Linked List.
+// A recursive function that converts a Binary Tree to Doubly Linked List.
 Node* BTToDLL(Node* root){
     static Node* prev=NULL;
     if(root==NULL)
