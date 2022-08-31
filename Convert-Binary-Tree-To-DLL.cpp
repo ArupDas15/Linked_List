@@ -34,7 +34,7 @@ Node* BTToDLL(Node* root){
     return head;
 }
 
-// Display Circular Link List
+// Display Doubly Link List
 void displayDLL(Node* head)
 {
     if(head==NULL)return;
