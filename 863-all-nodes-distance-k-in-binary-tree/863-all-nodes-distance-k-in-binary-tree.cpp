@@ -43,7 +43,6 @@ vector<int> burnTime(map <TreeNode*,TreeNode*> &omp,TreeNode* start, int K){
         }
     }
     for(auto itr:vis){
-        cout<<itr.first->val<<"->"<<itr.second<<endl;
         if(itr.second==K)
             ans.push_back(itr.first->val);
     }
