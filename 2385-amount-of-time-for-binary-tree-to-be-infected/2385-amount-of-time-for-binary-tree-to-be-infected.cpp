@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Similar question: https://github.com/ArupDas15/Linked_List/tree/master/863-all-nodes-distance-k-in-binary-tree 
 int burnTime(map <TreeNode*,TreeNode*> &omp,TreeNode* start){
     queue<TreeNode*> q;
     map <TreeNode*, int>vis;
@@ -23,6 +24,7 @@ int burnTime(map <TreeNode*,TreeNode*> &omp,TreeNode* start){
         for(int i=0;i<count;i++){
             curr_node=q.front();
             q.pop();
+            // Instead of !vis[curr_node->left] use vis.find(curr_node->left) == vis.end()
             if(curr_node->left!=NULL && !vis[curr_node->left]){
                 q.push(curr_node->left);
                 vis[curr_node->left]=1;
