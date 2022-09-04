@@ -26,7 +26,6 @@ vector<int> burnTime(map <TreeNode*,TreeNode*> &omp,TreeNode* start, int K){
                 q.push(curr_node->left);
                 if(flg==false)vis[curr_node->left]=++timer;
                 else vis[curr_node->left]=timer;
-                cout<<"Curr node: "<<curr_node->val<<", left: "<<curr_node->left->val<<", Time: "<<vis[curr_node->left]<<endl;
                 flg=true;
             }
             if(curr_node->right!=NULL && vis.find(curr_node->right) == vis.end()){
@@ -34,14 +33,12 @@ vector<int> burnTime(map <TreeNode*,TreeNode*> &omp,TreeNode* start, int K){
                 if(flg==false)vis[curr_node->right]=++timer;
                 else vis[curr_node->right]=timer;
                 flg=true;
-                cout<<"Curr node: "<<curr_node->val<<", right: "<<curr_node->right->val<<", Time: "<<vis[curr_node->right]<<endl;
             }
             if( omp[curr_node] && vis.find(omp[curr_node]) == vis.end()){
                 q.push(omp[curr_node]);
                 if(flg==false)vis[omp[curr_node]]=++timer;
                 else vis[omp[curr_node]]=timer;
                 flg=true;
-                cout<<"Curr node: "<<curr_node->val<<", Parent: "<<omp[curr_node]->val<<", Time: "<<vis[omp[curr_node]]<<endl;
             }
         }
     }
