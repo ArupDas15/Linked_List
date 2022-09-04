@@ -10,6 +10,10 @@
  * };
  */
 // Similar question: https://github.com/ArupDas15/Linked_List/tree/master/863-all-nodes-distance-k-in-binary-tree 
+// See notes too for this question.
+// Time complexity: O(n) But we are doing two BFS traversals over here. One for markling the parent and second for finding the time taken to burn the tree.
+// Space complexity: O(n)
+
 int burnTime(map <TreeNode*,TreeNode*> &omp,TreeNode* start){
     queue<TreeNode*> q;
     map <TreeNode*, int>vis;
@@ -42,6 +46,7 @@ int burnTime(map <TreeNode*,TreeNode*> &omp,TreeNode* start){
             }
         }
         if(flg==true){
+            // We update the timer only when a node gets infected.
             timer++;
         }
     }
