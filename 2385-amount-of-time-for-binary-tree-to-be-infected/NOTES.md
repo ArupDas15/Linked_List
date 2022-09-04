@@ -9,6 +9,7 @@ Reference: https://www.youtube.com/watch?v=2r5wLmQfD6g&t=1s (Striver)
 */
 // Time complexity: O(n) But we are doing two BFS traversals over here. One for markling the parent and second for finding the time taken to burn the tree.
 // Space complexity: O(n)
+```
 /************************************************************
 
     Following is the Binary Tree node structure
@@ -98,3 +99,4 @@ int timeToBurnTree(BinaryTreeNode<int>* root, int start)
     BinaryTreeNode<int>* start_node=MarkParentbyBFS(root,start,omp);
     return burnTime(omp,start_node);
 }
+```
