@@ -7,7 +7,7 @@ we see the tree from the top.
 For each test case, return the vector/list of all the elements of the top view of the given tree.
 
 Reference: https://www.youtube.com/watch?v=Et9OCDNvJ78
-This question is a variation of vertical order tree traversal.
+This question is a variation of vertical order traversal of binary tree: https://github.com/ArupDas15/Linked_List/blob/master/987-vertical-order-traversal-of-a-binary-tree/987-vertical-order-traversal-of-a-binary-tree.cpp
 */
 /*
 APPROACH: We will perform level order traversal of the tree and enqueue elements into the queue with their vertical level information. We will maintain a map
