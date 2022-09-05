@@ -41,6 +41,7 @@ public:
         for (auto p: mp) {
             vector < int > col;
             for (auto q: p.second) {
+                // Appends a set to the end of the col vector.
                 col.insert(col.end(), q.second.begin(), q.second.end());
             }
             ans.push_back(col);
