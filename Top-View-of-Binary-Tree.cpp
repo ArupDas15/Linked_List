@@ -9,7 +9,12 @@ For each test case, return the vector/list of all the elements of the top view o
 Reference: https://www.youtube.com/watch?v=Et9OCDNvJ78
 This question is a variation of vertical order tree traversal.
 */
-
+/*
+APPROACH: We will perform level order traversal of the tree and enqueue elements into the queue with their vertical level information. We will maintain a map
+to keep track of all the nodes at different vertical levels that we have encountered while popping a node from this queue. If a node belonging to a particular 
+level is not present in the map then we enqueue it into the map. Finally we push the value of every key(i.e. vertical level) into the ans vector and return the 
+ans vector. 
+*/
 /************************************************************
 
     Following is the TreeNode class structure:
