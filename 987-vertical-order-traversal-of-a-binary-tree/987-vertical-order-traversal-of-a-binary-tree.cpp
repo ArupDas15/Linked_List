@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time Complexity: O(n), Space Complexity: O(n)
+// Reference: https://www.youtube.com/watch?v=q_a6lpbKJdw&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=22
 class Solution {
 public:
     vector<vector<int>> verticalTraversal(TreeNode* root) {
