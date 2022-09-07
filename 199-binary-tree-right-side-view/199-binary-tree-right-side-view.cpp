@@ -9,6 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Check out Striver's solution, it is almost the same but instead of maxlevel he has used ans.size()==level concept. Basically he is using lesser number of arguments in 
+// the function call.
+
 // Time Complexity: O(n), Space Complexity: O(Height of the binary tree)~ O(n)
 class Solution {
 public:
