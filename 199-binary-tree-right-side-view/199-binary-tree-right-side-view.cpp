@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time Complexity: O(n), Space Complexity: O(Height of the binary tree)~ O(n)
 class Solution {
 public:
     void getrightSideView(TreeNode* root, int & maxlevel, int level, vector<int>&ans)     {
