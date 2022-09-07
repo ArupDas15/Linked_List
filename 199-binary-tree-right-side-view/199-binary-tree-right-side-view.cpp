@@ -24,10 +24,7 @@ public:
        vector<int>ans;
         int maxlevel=0;
         if(root==NULL)return ans;
-        
-        
-            getrightSideView(root,maxlevel, 1, ans);
-        
+        getrightSideView(root,maxlevel, 1, ans);
         return ans;
     }
 };
