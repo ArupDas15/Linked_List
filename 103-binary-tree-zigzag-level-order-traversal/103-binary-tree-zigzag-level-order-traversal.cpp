@@ -14,7 +14,8 @@ public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         vector<vector<int>>ans;
         if(root==NULL)return ans;
-        stack<TreeNode* >s1,s2;
+        stack<TreeNode* >s1;// Contains elements which have to be printed in natural order left-to-right.
+        stack<TreeNode* >s2;// Contains elements which have to be printed in reverse order right-to-left.
         s1.push(root);
         while(!s1.empty()||!s2.empty()){
             vector<int>temp_ans;
@@ -27,9 +28,9 @@ public:
                 if(cur_node->right!=NULL)
                     s2.push(cur_node->right);
             }
-            if(temp_ans.size()>0){
+            if(temp_ans.size()>0){ // If we do not check for size of temp answer then an empty vector will get inserted into ans vector.
                 ans.push_back(temp_ans);
-                temp_ans.clear();
+                temp_ans.clear();//Time Complexity: O(N) 
             }
             while(!s2.empty()){
                 TreeNode*cur_node=s2.top();
@@ -42,7 +43,7 @@ public:
             }
             if(temp_ans.size()>0){
                 ans.push_back(temp_ans);
-                temp_ans.clear();
+                temp_ans.clear();//Time Complexity: O(N) 
             }
         }
         
