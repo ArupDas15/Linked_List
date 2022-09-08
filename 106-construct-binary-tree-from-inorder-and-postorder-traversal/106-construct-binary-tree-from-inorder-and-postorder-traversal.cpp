@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Efficient Solution using Hashing: Time Complexity: O(n), Space Complexity: O(n)
+// construct Unique Binary Tree from Inorder and Preorder Traversal: https://github.com/ArupDas15/Linked_List/blob/master/Binary-Tree-from-Inorder-and-Preorder.cpp 
 class Solution {
 public:
     // Create a new Node and return its address
