@@ -57,6 +57,8 @@ int main()
 }
 */
 // Efficient Solution using Hashing: Time Complexity: O(n), Space Complexity: O(n) as we are storing the inorder traversal in an unordered map.
+// Construct Unique Bianry Tree from Inorder and PostOder Traversal: https://github.com/ArupDas15/Linked_List/blob/master/106-construct-binary-tree-from-inorder-and-postorder-traversal/106-construct-binary-tree-from-inorder-and-postorder-traversal.cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
