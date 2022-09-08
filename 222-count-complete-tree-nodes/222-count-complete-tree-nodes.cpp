@@ -11,8 +11,9 @@
  */
 /* 
 Approach: We will use the idea that for a perfect binary tree the number of nodes is 2^h-1.
-If the left height and right height of the tree is equal then we do not need to traverse the
-perfect binary subtree any further down. Since we are given as input a complete binary tree
+If the left height(height from the root to the left most leaf node) and right height (height 
+from the root to the right most leaf node) of the tree is equal then we do not need to traverse 
+the perfect binary subtree any further down. Since we are given as input a complete binary tree
 the right subtree will in worst case be a perfect binary tree and we will need to traverse all
 the nodes in the left subtree (O(log N) nodes). While finding the height of the tree we will
 do O(log N) work. So the total time complexity of this algorithm will be: O(log N)^2.
@@ -42,10 +43,14 @@ public:
     }    
     int countNodes(TreeNode* root) {
         if(root==NULL)return 0;
+        // Find the height from the root node to the left most leaf node.
         int lh = findLeftHeight(root);
+        // Find the height from the root node to the right most leaf node.
         int rh = findRightHeight(root);
+        // if the left height and right height are equal then it is perfect binary tree and we can directly apply the formula (2^h-1).
         if(lh==rh)
             return(pow(2,lh)-1);
+        // We will recursively find all the perfect binary subtrees in the given complete binary tree.
         else return countNodes(root->left)+1+countNodes(root->right) ;
     }
 };
