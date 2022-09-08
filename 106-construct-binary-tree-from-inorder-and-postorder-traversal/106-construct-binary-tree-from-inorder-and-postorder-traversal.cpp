@@ -31,6 +31,8 @@ public:
         return root;
     }
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+	if (inorder.size() != postorder.size())
+            return NULL;
         int n=inorder.size();
         unordered_map<int,int>ump;
         for(int i=0;i<n;i++){
