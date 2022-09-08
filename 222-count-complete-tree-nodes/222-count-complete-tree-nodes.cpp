@@ -20,6 +20,7 @@ do O(log N) work. So the total time complexity of this algorithm will be: O(log 
 Space Complexity: O(log N) due to the recursive calls made to calculate the height of the left
 and right subtree.
 */
+// Reference (Striver): https://www.youtube.com/watch?v=u-yWemKGWO0&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=33
 
 class Solution {
 public:
