@@ -7,7 +7,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-
+// Reference: https://takeuforward.org/data-structure/serialize-and-deserialize-a-binary-tree/
+// Time Complexity: O(n), Space complexity: O(n)
 class Codec {
 public:
 
