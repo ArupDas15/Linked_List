@@ -12,6 +12,13 @@
 // Reference: https://www.youtube.com/watch?v=80Zug6D1_r4
 // time Complexity: O(n), Space Complexity: O(1).
 // Based on Morris Traversal. Morris Traversal uses threaded binary tree.
+/*
+ Summary of the approach:
+ In-order Morris Traversal:
+🌳 1st case: if left is null, print current node and go right
+🌳 2nd case: before going left, make right most node on left subtree connected to current node, then go left
+🌳 3rd case: if thread is already pointed to current node, then remove the thread
+*/
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
