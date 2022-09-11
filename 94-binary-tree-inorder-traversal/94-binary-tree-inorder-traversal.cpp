@@ -19,6 +19,7 @@
 🌳 2nd case: before going left, make right most node on left subtree connected to current node, then go left
 🌳 3rd case: if thread is already pointed to current node, then remove the thread
 */
+// There is only a one line change in the Morris Preorder Traversal code. Check out the code here: https://github.com/ArupDas15/Linked_List/blob/master/144-binary-tree-preorder-traversal/144-binary-tree-preorder-traversal.cpp 
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
