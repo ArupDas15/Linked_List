@@ -9,6 +9,10 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time Complexity: O(h) ~ O(n)
+// Space Complexity: O(h) ~ O(n) due to recursive calls.
+// Reference: (Striver) https://www.youtube.com/watch?v=kouxiP_H5WE
+
 class Solution {
 public:
     TreeNode* getSuccessor(TreeNode* root){
