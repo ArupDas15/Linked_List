@@ -52,6 +52,7 @@ public:
             }
             // Case 3: The root node is an internal node having both left and right child.
             else{
+                // The getSuccessor() written here will work only when the root node contains a right child. We cannot use the getSuccessor() written here to get the inorder successor of a node in general.
                 TreeNode* succ=getSuccessor(root);
                 root->val = succ->val;
                 root->right = deleteNode(root->right,succ->val);
