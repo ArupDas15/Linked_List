@@ -8,6 +8,7 @@ Given a binary search tree and an integer 'x' return the ceil value of the inter
 // Time complexity: O(n) if the tree is skewed.
 // Space complexity: O(1)
 // Reference: https://www.youtube.com/watch?v=KSsk8AhdOZA
+// Floor in a BST: https://github.com/ArupDas15/Linked_List/blob/master/Floor-in-a-Binary-Search-Tree.cpp
 
 /************************************************************
 
