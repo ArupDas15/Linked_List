@@ -8,6 +8,7 @@ Note: 'X' is not smaller than the smallest node of the BST.
 // Time complexity: O(n) if the tree is skewed.
 // Space complexity: O(1)
 // Reference: https://www.youtube.com/watch?v=xm_W1ub-K-w
+// Ceil in a BST: https://github.com/ArupDas15/Linked_List/blob/master/Ceil-in-a-Binary-Search-Tree.cpp
 
 /************************************************************
 
