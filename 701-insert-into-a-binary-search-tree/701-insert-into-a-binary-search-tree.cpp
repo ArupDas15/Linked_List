@@ -9,6 +9,12 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// Approach: Find where the new node can be placed and insert it over there.
+// Time complexity: O(log n) assuming we have a height balanced binary search tree.
+// Space complexity: O(1)
+// Reference: https://www.youtube.com/watch?v=FiFiNvM29ps
+
 class Solution {
 public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
