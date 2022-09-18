@@ -7,7 +7,10 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
 // Time Complexity: O(n), Space Complexity: O(n) for the recursive calls.
+// Code to find LCA in a Binary Search Tree: https://github.com/ArupDas15/Linked_List/blob/master/235-lowest-common-ancestor-of-a-binary-search-tree/235-lowest-common-ancestor-of-a-binary-search-tree.cpp
+
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
