@@ -8,6 +8,10 @@
  * };
  */
 
+// Time Complexity: O(H) ~ O(n)
+// Space Complexity: O(H) ~ O(n)
+// Reference: https://www.youtube.com/watch?v=cX_kPV_foZc
+
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
