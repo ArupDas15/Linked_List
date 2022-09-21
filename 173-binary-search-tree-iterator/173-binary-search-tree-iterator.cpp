@@ -12,7 +12,8 @@
 // Reference: https://www.youtube.com/watch?v=D2jMcmxU4bs&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=52
 // Approach: We are going to use the iterative inorder traversal but store only the root and 
 // the left most elements of the root in the BST into a stack. This way whenever we do 
-// next() call, the lowest value node will be there in the stack top which we can easily pop // in O(1) time. After popping a node we will push all the nodes to the left of the right 
+// next() call, the lowest value node will be there in the stack top which we can easily pop 
+// in O(1) time. After popping a node we will push all the nodes to the left of the right 
 // child of the popped node as well as the right child node into the stack.
 
 // Time Complexity: O(1). It is O(1) time complexity because we are storing at max O(n) 
