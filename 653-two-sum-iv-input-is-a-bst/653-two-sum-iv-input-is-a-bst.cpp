@@ -53,7 +53,8 @@ public:
         BSTIterator r(root,true);
         int i=l.next();  
         int j=r.next();
-        
+        // Observe here that we cannot do l.hasNext()!=NULL && r.hasNext()!=NULL instead of i<j because then for i==j we will considering 
+        // the same element twice and it might be equal to k and the code will return true where as the expected answer is false. 
         while(i<j){  
             if(i+j==k)return true;
             else if(i+j>k)
