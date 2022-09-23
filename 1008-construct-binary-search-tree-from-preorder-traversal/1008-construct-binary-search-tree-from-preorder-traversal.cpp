@@ -18,9 +18,9 @@ public:
     // inorder traversal, where we can obtain the inorder traversal by just sorting the 
     // preorder vector(this takes O(nlog n) time) and then we can use the concept of Range 
     // of a node[Lower Limit, Higher Limit] to construct the tree. This will all together 
-    // take O(n log n) + O(n). We can optimise this further by observing that the Lower 
+    // take O(n log n) + O(n) time. We can optimise this further by observing that the Lower 
     // Limit(root value) is already known to us, we just need to find the upper limit. By 
-    // doing this, in the worst case we are visiting a three times. So our time compleixty 
+    // doing this, in the worst case we are visiting a node three times. So our time compleixty 
     // becomes O(3n) ~ O(n).
     
     // Space Complexity: O(n)
