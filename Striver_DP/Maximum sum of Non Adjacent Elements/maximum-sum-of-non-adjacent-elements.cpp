@@ -66,7 +66,7 @@ int maximumNonAdjacentSum(vector<int> &nums){
 // time complexity: O(n)
 // space complexity: O(1)
 #include <bits/stdc++.h> 
-int maxSub(vector<int> &nums,vector<int>&dp){
+int maxSub(vector<int> &nums){
     int prev = nums[0];
     int prev2 = 0;
     int pick, notpick, curi;
@@ -84,5 +84,5 @@ int maxSub(vector<int> &nums,vector<int>&dp){
 }
 int maximumNonAdjacentSum(vector<int> &nums){
     vector<int>dp(nums.size(),-1);
-    return maxSub(nums, dp);
+    return maxSub(nums);
 }
