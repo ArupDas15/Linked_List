@@ -24,7 +24,7 @@ int main() {
     printF(a,ds,idx);
     return 0;
 }
-*/ Sample Output
+/* Sample Output
 3 1 2 
 3 1 
 3 2 
