@@ -13,6 +13,7 @@ class Solution {
 public:
     int cur_streak = 0;
     int max_streak = 0;
+    // initialised to 100001 because as per constraints Node.val <= 10^5.
     int prev = 100001;
 
     vector<int> findMode(TreeNode* root) {
@@ -21,7 +22,9 @@ public:
         inorder_traversal(root, ans);
         return ans;
     }
-
+    
+    // We are doing DFS traversal so it will take O(V+E) = O(n) time.
+    // Space Complexity: O(n) for storing the ans
     void inorder_traversal(TreeNode* root, vector<int>& ans) {
         if (root == nullptr) return;
         inorder_traversal(root->left,ans);
