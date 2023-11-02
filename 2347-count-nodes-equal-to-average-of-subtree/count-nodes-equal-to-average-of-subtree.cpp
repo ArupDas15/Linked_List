@@ -19,6 +19,8 @@ public:
     }
 
     // return node_sum, node_count
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     pair<int, int> postorder_traversal(TreeNode* root) {
         int avg = 0;
         int node_sum = 0;
