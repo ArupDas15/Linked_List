@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // Intuition: The ants pass each other instead of colliding -> Magical ants: https://www.youtube.com/watch?v=JaJkEI-0zdI
     // Time Complexity: O(n)
     int getLastMoment(int n, vector<int>& left, vector<int>& right) {
         int ans = 0;
