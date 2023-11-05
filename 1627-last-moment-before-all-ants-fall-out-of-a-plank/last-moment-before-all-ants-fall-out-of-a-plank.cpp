@@ -1,22 +1,23 @@
 class Solution {
 public:
+    // Time Complexity: O(n)
     int getLastMoment(int n, vector<int>& left, vector<int>& right) {
-        int leftidx, rightidx;
+        int left_time, right_time;
         if (left.size()==0) {
-            leftidx=-1;
+            left_time=-1;
         } else if (right.size() == 0) {
-            rightidx=-1;
+            right_time=-1;
         }
-        if (leftidx!=-1)leftidx=INT_MIN;
-        if (rightidx!=-1)rightidx=INT_MAX;
+        if (left_time != -1)left_time = INT_MIN;
+        if (right_time != -1)right_time = INT_MAX;
         for(int i = 0; i < left.size(); i++) {
-            leftidx= max(leftidx,left[i]);
+            left_time= max(left_time, left[i]);
         }
         for(int i = 0; i < right.size(); i++) {
-            rightidx= min(rightidx,right[i]);
+            right_time = min(right_time, right[i]);
         }
-        if(leftidx==-1)return n-rightidx;
-        else if (rightidx==-1)return leftidx;
-        return max(leftidx , n-rightidx);
+        if(left_time == -1) return (n - right_time);
+        else if (right_time == -1) return left_time;
+        return max(left_time, (n - right_time));
     }
 };
