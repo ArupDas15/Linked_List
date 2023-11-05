@@ -11,8 +11,7 @@ public:
         currwinner = arr[0];
         maxEle = *max_element(arr.begin(), arr.end());
         for(int i = 1; i < arr.size() and 
-            (winstreak < k and currwinner != maxEle); 
-            i++) {
+            (winstreak < k and currwinner != maxEle); i++) {
                 opponent = arr[i];
                 if (currwinner > opponent) {
                     winstreak++;
