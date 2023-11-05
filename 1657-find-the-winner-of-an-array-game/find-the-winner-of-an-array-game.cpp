@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time complexity: O(n)
+    // Space complexity: O(n)
     int getWinner(vector<int>& arr, int k) {
         queue<int> q;
         int winstreak = 0 ;
