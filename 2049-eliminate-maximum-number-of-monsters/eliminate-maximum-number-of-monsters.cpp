@@ -8,7 +8,7 @@ public:
             arrival[i] = ((float) dist[i]) / ((float) speed[i]);
         }
         sort(arrival.begin(), arrival.end());
-        if(arrival[0]>=0) {
+        if(arrival[0] > 0) {
             ans++;
         }
         for(int i = 1; i < arrival.size(); i++) {
