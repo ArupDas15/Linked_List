@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     vector<int> restoreArray(vector<vector<int>>& adjacentPairs) {
         int n;
         vector<int> ans;
