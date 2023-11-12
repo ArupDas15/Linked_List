@@ -39,7 +39,6 @@ public:
                         for(int i = 0; i < n; i++) {
                             int stop = routes[route_id][i];
 
-                        
                             if(seen_stops.find(stop) == seen_stops.end()) {
                                 // mark bus stop as visited
                                 seen_stops.insert(stop);  
