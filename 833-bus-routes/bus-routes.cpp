@@ -3,6 +3,8 @@ public:
     // We will perform BFS on the source node and continue traversing 
     // until we reach the target node. The number of different routes we 
     // encounter is the answer.
+    // Time Complexity: O(mn)
+    // Space Complexity: O(mn)
     int numBusesToDestination(vector<vector<int>>& routes, int source, int target) {
         int m; // no. of routes
         int n; // no. of stops in a bus route
@@ -14,6 +16,7 @@ public:
 
         ans = 0;
         m = routes.size();
+        // Time Complexity: O(mn)
         for(int route_id = 0; route_id < m; route_id++) {
             for(auto stop : routes[route_id]) {
                 graph[stop].push_back(route_id);
@@ -22,9 +25,11 @@ public:
         q.push(source);
         seen_stops.insert(source);
         while(!q.empty()) {
+            // Time Complexity: O(m)
             int cnt = q.size();
-
+            
             for(int j = 0; j < cnt; j++) {
+                // Time Complexity: O(n)
                 int bus_stop = q.front();
 
                 q.pop();
