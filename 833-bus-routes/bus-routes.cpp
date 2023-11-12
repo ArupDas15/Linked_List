@@ -20,6 +20,7 @@ public:
             }
         }
         q.push(source);
+        seen_stops.insert(source);
         while(!q.empty()) {
             int cnt = q.size();
 
