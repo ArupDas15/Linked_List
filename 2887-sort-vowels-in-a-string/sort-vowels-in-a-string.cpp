@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     // Returns true if the character is a vowel.
     bool isVowel(char c) {
         return c == 'a' || c == 'e' || c == 'o'|| c == 'u'|| c == 'i' 
@@ -35,6 +37,8 @@ public:
 /*
 class Solution {
 public:
+    // Time Complexity: O(nlogn)
+    // Space Complexity: O(n)
     string sortVowels(string s) {
         string t;
         vector<int> idxs;
