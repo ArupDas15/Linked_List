@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     int countPalindromicSubsequence(string s) {
         unordered_set<char> left;
         unordered_map<char,int> right;
