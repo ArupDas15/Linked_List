@@ -3,9 +3,9 @@ public:
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     int countPalindromicSubsequence(string s) {
+        set<pair<char,char>> res;
         unordered_set<char> left;
         unordered_map<char,int> right;
-        set<pair<char,char>> res;
 
         for(int i = 0; i < s.length(); i++) {
             right[s[i]] += 1;
