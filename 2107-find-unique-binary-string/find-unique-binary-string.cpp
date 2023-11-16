@@ -1,12 +1,23 @@
 class Solution {
 public:
-    string findDifferentBinaryString(vector<string>& nums) {
-        string ans;
-        for (int i = 0; i < nums.size(); i++) {
-            char curr = nums[i][i];
-            ans += curr == '0' ? '1' : '0';
+    set<string>numset;
+    string generate(string curr) {
+        if(curr.length() == numset.size()) {
+            if(numset.find(curr) == numset.end()) {
+                return curr;
+            }
+            return "";
         }
-        
-        return ans;
+        string zero_str = generate(curr + "0");
+        if(zero_str != "") {
+            return zero_str;
+        }
+        return generate(curr + "1");
+    }
+    string findDifferentBinaryString(vector<string>& nums) {
+        for(int i = 0; i < nums.size(); i++) {
+            numset.insert(nums[i]);
+        }
+        return generate("");
     }
 };
