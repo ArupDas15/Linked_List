@@ -1,6 +1,6 @@
 class Solution {
 public:
-    // Time Complexity: O(nm)
+    // Time Complexity: O(n) where n is the number of elements in the 2D arr.
     // Space Complexity: O(n)
     // Whenever asked to do diagonal traversal in a tree or diagonal 
     // matrix etc. think of a solution involving a map.
