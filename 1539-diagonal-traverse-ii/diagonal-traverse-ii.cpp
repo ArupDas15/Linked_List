@@ -15,10 +15,10 @@ public:
             }
         }
         for(auto it : mp) {
-            // int key = it.first;
-            while(!mp[it.first].empty()) {
-                ans.push_back(mp[it.first].top());
-                mp[it.first].pop();
+            int key = it.first;
+            while(!mp[key].empty()) {
+                ans.push_back(mp[key].top());
+                mp[key].pop();
             }
         }
         return ans;
