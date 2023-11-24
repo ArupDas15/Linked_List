@@ -1,14 +1,14 @@
 class Solution {
 public:
+    // time complexity: O(nlog n)
+    // space complexity: O(log n)
     int maxCoins(vector<int>& piles) {
         int ans = 0;
+
         sort(piles.begin(),piles.end());
-        int k = 0;
-    
-        for(int i = 0, j = piles.size()-1;
-            i< (piles.size() / 3) && j > (piles.size() / 3); i++){
+        for(int j = piles.size()-1;
+            j > (piles.size() / 3); ){
             j--;
-            cout<<piles[j]<<" ";
             ans+=piles[j];
             j--;
         }
