@@ -42,7 +42,8 @@ public:
 //             int left_half = leftcount > 0 ?
 //                                 (leftcount*nums[i])-prefixsum[i-1]:0;
 //             int right_half = (prefixsum[n-1]-prefixsum[i])-
-//                                 (rightcount*nums[i]);
+//                                 (rightcount*nums[I]);
+
 //             ans.push_back(left_half + right_half);
 //         }
 //         return ans;
