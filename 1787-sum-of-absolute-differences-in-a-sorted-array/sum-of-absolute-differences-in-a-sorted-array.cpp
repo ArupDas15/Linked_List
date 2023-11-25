@@ -40,7 +40,7 @@ public:
 //             int leftcount = i;
 //             int rightcount = n - 1 - i;
 //             int left_half = leftcount > 0 ?
-//                                 (leftcount * nums[I]) - prefixsum[i - 1]:0;
+//                                 (leftcount * nums[I]) - prefixsum[i - 1] : 0;
 //             int right_half = (prefixsum[n - 1]- prefixsum[i]) -
 //                                 (rightcount * nums[i]);
 
