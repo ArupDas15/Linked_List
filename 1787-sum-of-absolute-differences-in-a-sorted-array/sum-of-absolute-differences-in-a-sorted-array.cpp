@@ -34,15 +34,15 @@ public:
 
 //         prefixsum[0] = nums[0];
 //         for(int i = 1; i < n; i++) {
-//             prefixsum[i]=prefixsum[i-1]+nums[i];
+//             prefixsum[i] = prefixsum[i - 1]+nums[i];
 //         }
 //         for(int i = 0; i < n; i++) {
 //             int leftcount = i;
 //             int rightcount = n - 1 - i;
 //             int left_half = leftcount > 0 ?
-//                                 (leftcount*nums[i])-prefixsum[i-1]:0;
-//             int right_half = (prefixsum[n-1]-prefixsum[i])-
-//                                 (rightcount*nums[I]);
+//                                 (leftcount * nums[I]) - prefixsum[i - 1]:0;
+//             int right_half = (prefixsum[n - 1]- prefixsum[i]) -
+//                                 (rightcount * nums[i]);
 
 //             ans.push_back(left_half + right_half);
 //         }
