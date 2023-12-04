@@ -15,10 +15,7 @@ public:
                 count = 1;
             }
             if(count == 3 and prev > max_int) {
-                ans = "";
-                ans.push_back(char(prev));
-                ans.push_back(char(prev));
-                ans.push_back(char(prev));
+                ans = string(3, prev);
                 max_int = prev;
             }
         }
