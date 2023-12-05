@@ -13,6 +13,8 @@ public:
             fib.push_back(fib.back() + fib[fib.size() - 2]);
             prev = fib.back();  
         }
+        // Since the last element in fib will always be greater than k,
+        // we start the for loop with the second last element in fib.
         for (int i = fib.size() - 2; i >= 0 && k > 0; i--) {
             if (fib[i] <= k) {
                 count++;
