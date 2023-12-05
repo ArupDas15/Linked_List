@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time complexity: O(k)
+    // Space complexity: O(k)
     int findMinFibonacciNumbers(int k) {
         vector<int> fib;
         int prev = 1;
@@ -8,7 +10,7 @@ public:
             if (i == 1 || i == 2) {
                 fib.push_back(1);
             } else {
-                fib.push_back(fib[i - 3] + fib[i - 2]);
+                fib.push_back(fib.back() + fib[fib.size() - 2]);
                 prev = fib.back();  
             }
         }
