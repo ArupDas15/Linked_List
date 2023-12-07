@@ -1,7 +1,9 @@
 class Solution {
 public:
     // Time complexity: O(n)
-    // Space complexity: O(1) 
+    // Space complexity: O(1)
+    // Intuition: What this question is asking for is the longest 
+    // substring starting from index 0 that ends in an odd number.
     string largestOddNumber(string num) {
       for(int i = num.length() - 1; i >= 0; i--) {
           // NOTE: the ASCII values for characters with even values are
