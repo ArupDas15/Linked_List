@@ -10,11 +10,10 @@
  * };
  */
 class Solution {
-private:
-    string ans = "";
 public:
-    
-    void printPreorder(TreeNode* node) {
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)    
+    void printPreorder(TreeNode* node,string& ans) {
         if (node == nullptr) {
             ans.append("()");
             return;
@@ -25,30 +24,31 @@ public:
             // right subtree
             ans.append("(");
             // Recur on left subtree
-            printPreorder(node->left);
+            printPreorder(node->left, ans);
             ans.append(")");
         } else if(node->left == nullptr and node->right != nullptr) {
             // if left subtree does not exists and right subtree does -
             // do not ignore left subtree
             ans.append("()(");
             // Recur on right subtree
-            printPreorder(node->right);
+            printPreorder(node->right, ans);
             ans.append(")");
         } else if (node->left != nullptr and node->right != nullptr) {
             // if left and right subtree exists - recurse on both subtrees
             ans.append("(");
             // Recur on left subtree
-            printPreorder(node->left);
+            printPreorder(node->left, ans);
             ans.append(")");
             ans.append("(");
             // Recur on right subtree
-            printPreorder(node->right);
+            printPreorder(node->right, ans);
             ans.append(")");
         }
     }
 
     string tree2str(TreeNode* root) {
-        printPreorder(root);
+        string ans = "";
+        printPreorder(root, ans);
         return ans;
     }
 };
