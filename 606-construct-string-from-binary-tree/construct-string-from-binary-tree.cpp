@@ -17,7 +17,9 @@ public:
         if (node == nullptr) {
             ans.append("()");
             return;
-        } else ans.append(to_string(node->val));
+        } else {
+            ans.append(to_string(node->val));
+        }
 
         if(node->left != nullptr and node->right == nullptr) {
             // if left subtree exists and right subtree does not - ignore 
