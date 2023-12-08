@@ -22,27 +22,27 @@ public:
         }
 
         if(node->left != nullptr and node->right == nullptr) {
-            // if left subtree exists and right subtree does not - ignore 
+            // if the left subtree exists and the right subtree does not - ignore 
             // right subtree
             ans.append("(");
-            // Recur on left subtree
+            // Recur on the left subtree
             printPreorder(node->left, ans);
             ans.append(")");
         } else if(node->left == nullptr and node->right != nullptr) {
-            // if left subtree does not exists and right subtree does -
-            // do not ignore left subtree
+            // if the left subtree does not exist and the right subtree does -
+            // do not ignore the left subtree
             ans.append("()(");
-            // Recur on right subtree
+            // Recur on the right subtree
             printPreorder(node->right, ans);
             ans.append(")");
         } else if (node->left != nullptr and node->right != nullptr) {
-            // if left and right subtree exists - recurse on both subtrees
+            // if left and right subtree exist - recurse on both subtrees
             ans.append("(");
-            // Recur on left subtree
+            // Recur on the left subtree
             printPreorder(node->left, ans);
             ans.append(")");
             ans.append("(");
-            // Recur on right subtree
+            // Recur on the right subtree
             printPreorder(node->right, ans);
             ans.append(")");
         }
