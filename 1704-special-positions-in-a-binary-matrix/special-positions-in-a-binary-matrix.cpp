@@ -3,10 +3,10 @@ public:
     // Time complexity: O(m⋅n)
     // Space complexity: O(m + n)
     int numSpecial(vector<vector<int>>& mat) {
-        vector<int> rsum;
-        vector<int> csum;
         int sum = 0;
         int cnt = 0;
+        vector<int> rsum;
+        vector<int> csum;
 
         for(int i = 0; i < mat.size(); i++) {
             sum = 0;
