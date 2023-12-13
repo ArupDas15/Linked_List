@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time complexity: O(m⋅n)
+    // Space complexity: O(m + n)
     int numSpecial(vector<vector<int>>& mat) {
         vector<int> rsum;
         vector<int> csum;
