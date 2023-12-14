@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time complexity: O(m * n)
+    // Space complexity: O(m + n)
     vector<vector<int>> onesMinusZeros(vector<vector<int>>& grid) {
         int cnt1;
         int cnt0;
