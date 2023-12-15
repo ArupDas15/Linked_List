@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time complexity: O(N log N + M log M)
+    // Space complexity: O(log N + log M)
     int findContentChildren(vector<int>& g, vector<int>& s) {
         int ans = 0;
         int j = g.size() - 1;
