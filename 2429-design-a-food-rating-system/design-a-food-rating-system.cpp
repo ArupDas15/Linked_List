@@ -9,6 +9,8 @@ class FoodRatings {
     unordered_map<string, set<pair<int, string>>> cuisineFoodMap;
 
 public:
+    // Time Complexity: O((n+m)logn)
+    // Space complexity: O(n)
     FoodRatings(vector<string>& foods, vector<string>& cuisines, vector<int>& ratings) {
         for (int i = 0; i < foods.size(); ++i) {
             // Store 'rating' and 'cuisine' of current 'food' in 'foodRatingMap' and 'foodCuisineMap' maps.
@@ -19,6 +21,7 @@ public:
         }
     } 
 
+    // Time Complexity: O(mlogn)
     void changeRating(string food, int newRating) {
         // Fetch cuisine name for food.
         auto cuisineName = foodCuisineMap[food];
@@ -33,6 +36,7 @@ public:
         cuisineFoodMap[cuisineName].insert({ -newRating, food });
     }
     
+    // Time Complexity: O(mlogn)
     string highestRated(string cuisine) {
         auto highestRated = *cuisineFoodMap[cuisine].begin();
         // Return name of the highest rated 'food' of 'cuisine'.
