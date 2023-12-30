@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time Complexity: O(nk) - k is the average length of the elements in words
+    // Space Complexity: O(1)
     bool makeEqual(vector<string>& words) {
         int arr[26] = {0};
 
