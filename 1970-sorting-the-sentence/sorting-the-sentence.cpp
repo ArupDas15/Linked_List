@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // time complexity: O(n)
+    // space complexity: O(n)
     string sortSentence(string s) {
         string arr[9];
         string temp = "";
@@ -17,7 +19,6 @@ public:
                 }
             }
         }
-        temp = "";
         for(int i = 0; i < 9; i++) {
             if(arr[i] != "") {
                 temp = temp + arr[i];
