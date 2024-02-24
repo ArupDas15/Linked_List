@@ -24,7 +24,7 @@ public:
         int left_sum =  maxSubArraySum(nums, l, mid);
         int right_sum = maxSubArraySum(nums, mid + 1, r);
         int cross_sum = maxCrossSubArraySum(nums, l, r, mid);
-        return (left_sum > right_sum)? ((left_sum > cross_sum) ? left_sum : cross_sum) : ((right_sum > cross_sum) ? right_sum : cross_sum);
+        return max({left_sum, right_sum, cross_sum});
     }
     int maxSubArray(vector<int>& nums) {
         return maxSubArraySum(nums, 0, nums.size() - 1);
