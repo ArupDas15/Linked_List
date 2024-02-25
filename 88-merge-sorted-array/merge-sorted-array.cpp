@@ -4,7 +4,7 @@ public:
         for(int i = m, j = 0; i< m + n && j < n; i++, j++) {
             nums1[i] = nums2[j];
         }
-        
+
         int gap = ceil(floor(m + n) / 2);
         int left = 0;
         int right = left + gap;
@@ -12,7 +12,7 @@ public:
         for(;gap > 0; gap = ceil(floor(gap) / 2)) {
             left = 0;
             right = left + gap;
-            while(right < nums1.size() ) {
+            while(right < m + n ) {
                 if(nums1[left] > nums1[right]) {
                     swap(nums1[left], nums1[right]);
                 }
