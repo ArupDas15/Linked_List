@@ -1,14 +1,11 @@
 class Solution {
 public:
-    static bool sortcol(const vector<int>& v1, const vector<int>& v2) {
-        return v1[0] < v2[0];
-    }
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         vector<vector<int>> ans;
         vector<int> temp_vec;
         bool last_vec_processed = false;
         
-        sort(intervals.begin(), intervals.end(), sortcol);
+        sort(intervals.begin(), intervals.end());
         for(int i = 0; i < intervals.size() and !last_vec_processed; i++) {
             temp_vec.push_back(intervals[i][0]);
             int new_end = intervals[i][1];
