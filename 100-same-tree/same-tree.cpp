@@ -11,10 +11,13 @@
  */
 class Solution {
 public:
+    // Time Complexity: O(n); n is the number of nodes in the binary tree.
+    // Space Complexity: O(h); h is the heoght of the binary tree.
     bool isSameTree(TreeNode* p, TreeNode* q) {
         if(p == nullptr && q == nullptr) {
             return true;
-        } else if(p != nullptr && q != nullptr && p->val == q->val) {
+        } else if((p != nullptr && q != nullptr) && 
+                  (p->val == q->val)) {
             return (isSameTree(p->left, q->left) &&
                    isSameTree(p->right, q->right));
         } 
