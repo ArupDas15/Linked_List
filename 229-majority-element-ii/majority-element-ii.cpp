@@ -1,5 +1,8 @@
 class Solution {
 public:
+    // Intuition: There can be atmost 2 elements that appear more than ⌊ n/3 ⌋ times.
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     vector<int> majorityElement(vector<int>& nums) {
         int n = nums.size();
         int cnt1 = 0, cnt2 = 0;
