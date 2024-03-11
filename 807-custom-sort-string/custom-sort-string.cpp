@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     string customSortString(string order, string s) {
         string ls = "";
         string ans = "";
