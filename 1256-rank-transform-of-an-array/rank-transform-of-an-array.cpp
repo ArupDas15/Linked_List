@@ -5,9 +5,11 @@ public:
         std::unordered_map<int, int> ump;
         vector<int> ans;
 
+        if (arr.size() == 0) return ans;
         sort(copy_arr.begin(),copy_arr.end());
-        for(int i = 0, rank = 1; i < copy_arr.size(); i++) {
-            if (ump.find(copy_arr[i]) == ump.end()) {
+        ump[copy_arr[0]] = 1;
+        for(int i = 1, rank = 2; i < copy_arr.size(); i++) {
+            if (copy_arr[i] > copy_arr[i - 1]) {
                 ump[copy_arr[i]] = rank;
                 rank++; 
             }
