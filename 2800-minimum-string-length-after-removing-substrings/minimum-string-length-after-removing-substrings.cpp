@@ -1,14 +1,12 @@
 class Solution {
 public:
     int minLength(string s) {
-    string final_string;
-    bool not_minimum = true;
-
-    while (not_minimum) {
-        not_minimum = false;
-        final_string.clear();  // Clear the final string for new construction
-        
-        for (int i = 0; i < s.length(); i++) {
+        string final_string;
+        bool not_minimum = true;
+        do {
+            not_minimum = false;
+            final_string.clear();
+             for (int i = 0; i < s.length(); i++) {
             if (i < s.length() - 1 && ((s[i] == 'A' && s[i + 1] == 'B') || (s[i] == 'C' && s[i + 1] == 'D'))) {
                 // Skip the next character as well
                 not_minimum = true;  // We made a removal
@@ -18,8 +16,7 @@ public:
             }
         }
         s = final_string;  // Update the string for the next iteration
-    }
-
-    return s.length();
+        } while (not_minimum);
+        return s.length();
     }
 };
