@@ -1,10 +1,6 @@
 class Solution {
 public:
     int minAddToMakeValid(string s) {
-        if (s.length() == 0 or 
-            (s.find('(') == -1 && s.find(')') == -1)) {
-                return 0;
-        } 
         int open = 0, close = 0;
         for (char ch : s) {
             if (ch == '(') {
