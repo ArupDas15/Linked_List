@@ -7,6 +7,8 @@ public:
        3.1. For each interval, check if it can extend the group represented by the earliest end time in the heap.
        3.2. If the current interval starts after the earliest end time, you can reuse that group by replacing the end time.
        3.3. If it cannot, add a new group.
+    Time Complexity: O(nlogn); O(nlogn) for sorting, logn for every heapification and we do it n times.
+    Space complexity: O(n) for storing n intervals.
     */
     int minGroups(vector<vector<int>>& intervals) {
         sort(intervals.begin(), intervals.end());
