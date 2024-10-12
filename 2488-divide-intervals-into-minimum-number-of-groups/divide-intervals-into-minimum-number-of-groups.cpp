@@ -1,22 +1,23 @@
 class Solution {
 public:
+    /* STEPS 
+    1.  Sort the intervals by their starting points. If two intervals start at the same point, sort by their ending points.
+    2. Maintain a min-heap that keeps track of the end times of the intervals in the current groups.
+    3. Iterate Over the Sorted Intervals:
+       3.1. For each interval, check if it can extend the group represented by the earliest end time in the heap.
+       3.2. If the current interval starts after the earliest end time, you can reuse that group by replacing the end time.
+       3.3. If it cannot, add a new group.
+    */
     int minGroups(vector<vector<int>>& intervals) {
-        // Sort intervals based on their starting points
         sort(intervals.begin(), intervals.end());
-        
-        // Min-heap to track end times of current groups
         priority_queue<int, vector<int>, greater<int>> minHeap;
         
         for (const auto& interval : intervals) {
-            // If the current interval can extend the earliest ending group
             if (!minHeap.empty() && interval[0] > minHeap.top()) {
-                minHeap.pop(); // Remove the group that can be extended
+                minHeap.pop(); 
             }
-            // Add the current interval's end time to the heap
             minHeap.push(interval[1]);
         }
-        
-        // The size of the heap is the number of groups needed
         return minHeap.size();
     }
 };
