@@ -8,7 +8,7 @@ public:
         for (int i = 0; i <= s2.length() - s1.length(); i++) {
             string tmp = s2.substr(i,s1.length());
             sort(tmp.begin(),tmp.end());
-            if (s1.compare(tmp) == 0) {
+            if (s1 == tmp) {
                 return true;
             }
         }
