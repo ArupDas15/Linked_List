@@ -40,11 +40,12 @@ public:
         res[1] = right;
         while(true) {
             auto [min_ele, list_idx, idx] = min_heap.top();
+            min_heap.pop();
+
             if (idx + 1 == nums[list_idx].size()) {
-                break;
+                return res;
             }
             int next_val = nums[list_idx][idx + 1];
-            min_heap.pop();
             min_heap.push(make_tuple(next_val, list_idx, idx + 1));
             left = get<0>(min_heap.top());
             right = max(right, next_val);
@@ -53,6 +54,5 @@ public:
                 res[1] = right;
             }
         }
-        return res;
     }
 };
