@@ -1,22 +1,15 @@
 class Solution:
-    def areSentencesSimilar(self, s1: str, s2: str) -> bool:
-        # Split the words in sentences and store it in a string array.
-        s1_words = s1.split(" ")
-        s2_words = s2.split(" ")
-        start, ends1, ends2 = 0, len(s1_words) - 1, len(s2_words) - 1
+    def areSentencesSimilar(self, sentence1: str, sentence2: str) -> bool:
+        s1 = sentence1.split(" ")
+        s2 = sentence2.split(" ")
+        l1, r1, r2 = 0, len(s1) - 1, len(s2) - 1
 
-        # If words in s1 are more than s2, swap them and return the answer.
-        if len(s1_words) > len(s2_words):
-            return self.areSentencesSimilar(s2, s1)
-
-        # Find the maximum words matching from the beginning.
-        while start < len(s1_words) and s1_words[start] == s2_words[start]:
-            start += 1
-
-        # Find the maximum words matching in the end.
-        while ends1 >= 0 and s1_words[ends1] == s2_words[ends2]:
-            ends1 -= 1
-            ends2 -= 1
-
-        # If i reaches the end of the array, then we return true.
-        return ends1 < start      
+        if len(s1) > len(s2):
+            # We always assume len(s1) < len(s2)
+            return self.areSentencesSimilar(sentence2, sentence1)
+        while l1 < len(s1) and s1[l1] == s2[l1]:
+            l1 += 1
+        while r1 >= 0 and s1[r1] == s2[r2]:
+            r1 = r1 - 1
+            r2 = r2 - 1
+        return r1 < l1        
