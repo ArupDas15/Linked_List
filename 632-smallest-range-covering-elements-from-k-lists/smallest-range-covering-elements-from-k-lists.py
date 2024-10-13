@@ -22,7 +22,7 @@ class Solution:
     
     Time complexity: Let's say there are n elements in every list. since we compute the minimum out of k lists.
     The time complexity becomes O(nk). However, if we use a minheap the time complexity become O(nlogk).
-    Space complexity: O(k)
+    Space complexity: O(k) because we store k elements in the min_heap at every iteration.
 
     """
     def smallestRange(self, nums: List[List[int]]) -> List[int]:
