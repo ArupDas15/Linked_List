@@ -22,7 +22,7 @@ public:
     6.7. if res[1] - res[0] > right - left then res = [left,right]
     
     Time complexity: Let's say there are n elements in every list. since we compute the minimum out of k lists.
-    The time complexity becomes O(nk). However, if we use a minheap the time complexity become O(nlogk).
+    The time complexity becomes O(nk). However, if we use a minheap the time complexity become O(nlogk) where logk is the time taken for insertion.
     Space complexity: O(k) because we store k elements in the min_heap at every iteration.
 */
     vector<int> smallestRange(vector<vector<int>>& nums) {
