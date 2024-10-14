@@ -1,7 +1,7 @@
 class Solution:
     # NOTE: Python uses min heap by default 
     # where as C++ uses max heap bby default.
-    # Time Complexity: O(klogn)
+    # Time Complexity: O(nlogn +klogn)
     # Space Complexity: O(n)
     def maxKelements(self, nums: List[int], k: int) -> int:
         max_heap = []
