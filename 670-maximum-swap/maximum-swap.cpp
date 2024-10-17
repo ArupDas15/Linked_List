@@ -8,6 +8,7 @@ public:
        and if the digit at current position i is 
        less than the digit at maxRightIdx[i] then perform 
        the swap and output the ans.
+    TC: O(n), SC: O(n)
     */
     int maximumSwap(int num) {
         string numStr = to_string(num);
