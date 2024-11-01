@@ -23,4 +23,4 @@ class Solution:
                     min_removals, len(nums) + 1 - LIS[i] - LDS[i] 
                 )
         
-        return min_removals if min_removals != float("inf") else 1
+        return min_removals
