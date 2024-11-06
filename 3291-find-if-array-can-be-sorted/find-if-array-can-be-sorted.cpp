@@ -12,7 +12,10 @@ public:
         }
         return count;
     }
-
+    // Time complexity: O(m * log n), 
+    // where n is the value of the largest number in the array
+    // and we have m elements in nums.
+    // Space complexity: O(m), where m is the size of the input array nums.
     bool canSortArray(vector<int>& nums) {
         vector<vector<int>>segments;
         int cur_setbitcount = 0;
