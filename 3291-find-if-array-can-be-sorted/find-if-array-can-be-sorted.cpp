@@ -42,8 +42,8 @@ public:
             }
         }
         for (int i = 0 ; i < segments.size() - 1; i++) {
-            if (*max_element(segments[i].begin(),segments[i].end())
-            > *min_element(segments[i+1].begin(),segments[i+1].end())) {
+            if (*max_element(segments[i].begin(),segments[i].end()) > 
+                *min_element(segments[i+1].begin(),segments[i+1].end())) {
                 return false;
             }
         }
