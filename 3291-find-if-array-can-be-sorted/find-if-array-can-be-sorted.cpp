@@ -12,20 +12,29 @@ public:
         }
         return count;
     }
+    /* ----------------------------
+        1. Split the array into segments. Each segment contains 
+           consecutive elements with the same number of set bits.
+        2. From left to right, the previous segment’s largest 
+           element should be smaller than the current segment’s smallest element.
+    */
     // Time complexity: O(m * log n), 
     // where n is the value of the largest number in the array
     // and we have m elements in nums.
     // Space complexity: O(m), where m is the size of the input array nums.
     bool canSortArray(vector<int>& nums) {
+        // List to hold segments of numbers with the same number of set bits
         vector<vector<int>>segments;
-        int cur_setbitcount = 0;
-        int prev_setbitcount = 0;
+        // Initialize with an impossible set bit count
+        int cur_setbitcount = -1;
+        int prev_setbitcount = -1;
         
         for(int i = 0; i < nums.size(); i++) {
             cur_setbitcount = countSetBits(nums[i]);
             if (prev_setbitcount == cur_setbitcount) {
                 segments.back().push_back(nums[i]);
             } else {
+                //  Create segments of numbers with the same number of set bits
                 vector<int> segment;
                 segment.push_back(nums[i]);
                 segments.push_back(segment);
