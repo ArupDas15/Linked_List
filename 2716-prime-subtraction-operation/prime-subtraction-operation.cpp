@@ -10,7 +10,7 @@ public:
         vector<int> sieve(maxElement + 1, 1);
         
         sieve[0] = sieve[1] = 0;
-        for (int i = 2; i*i <= maxElement+1; i++) {
+        for (int i = 2; i*i <= maxElement; i++) {
             if(sieve[i] == 1) {
                 for (int j = i*i; j <= maxElement; j += i) {
                     sieve[j] = 0;
