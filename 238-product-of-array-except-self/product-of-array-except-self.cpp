@@ -14,7 +14,8 @@ public:
        5. Multiply the vectors prefix and suffix to find the prefixSuffixProduct vector.
     */
     // Time complexity: O(n)
-    // Space complexity: O(1)
+    // Space complexity: O(1) -> The output array does not 
+    // count as extra space for space complexity analysis.
     vector<int> productExceptSelf(vector<int>& nums) {
         vector<int> prefixSuffixProduct(nums.size(), 1);
         int prefixProduct = 1;
