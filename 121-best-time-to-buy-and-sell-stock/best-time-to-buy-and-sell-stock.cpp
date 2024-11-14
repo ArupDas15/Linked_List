@@ -9,7 +9,7 @@ public:
         3.3. minbp = min(minbp, prices[i])
     4. return profit
     Time Complexity: O(n)
-    Space complexity: O(n)
+    Space complexity: O(1)
     */
     int maxProfit(vector<int>& prices) {
         int profit = 0;
