@@ -16,7 +16,10 @@ class Solution:
         mid = (left + right) // 2
 
         while left != right:
-            if nums[mid] < nums[right]:
+            if (nums[left] < nums[mid]) and (nums[mid] < nums[right]):
+                # if search space is sorted the inflection point is minimum value.
+                return nums[left]
+            elif nums[mid] < nums[right]:
                 right = mid
             else:
                 left = mid + 1
