@@ -18,6 +18,11 @@ public:
         int mid = (left + right) / 2;
 
         while(left != right) {
+            if ((nums[left] < nums[mid]) and (nums[mid] < nums[right])) {
+                // if search space is sorted then the inflection point 
+                // is the minimum value thus return nums[left].
+                return nums[left];
+            }
             // check if nums[mid ... right] is sorted.
             if (nums[mid] < nums[right]) {
                 right = mid;
