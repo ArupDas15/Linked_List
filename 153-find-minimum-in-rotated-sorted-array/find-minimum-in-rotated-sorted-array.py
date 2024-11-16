@@ -8,7 +8,7 @@ class Solution:
         otherwise, left = mid + 1 because we know that nums[mid] is not the inflection point for sure.
         when left == right we stop.
     """
-    # Time complexity: O(n)
+    # Time complexity: O(log n)
     # Space complexity: O(1)
     def findMin(self, nums: List[int]) -> int:
         left = 0
