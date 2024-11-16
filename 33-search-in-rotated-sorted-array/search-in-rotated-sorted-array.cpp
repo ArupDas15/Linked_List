@@ -26,7 +26,11 @@ public:
             // Since the array elements are unique we don't check for <= case.
             if (nums[mid] < nums[right]) {
                 if ((target >= nums[mid]) and (target <= nums[right])) {
-                    // Since target is in sorted right half update left to mid.
+                    // Since target is in sorted right half update left to mid + 1.
+                    // We have already checked for nums[mid] == target earlier and we
+                    // need to narrow the search space. Thus, if we do not move left to
+                    // mid + 1 then nums[mid] will keep pointing to the same element and 
+                    // the search space will remain the same.
                     left = mid + 1;
                 } else {
                     right = mid - 1;
@@ -34,7 +38,7 @@ public:
             } else {
                 // if right half is not sorted then left half is definitely sorted.
                 if ((target >= nums[left]) and (target <= nums[mid])) {
-                    // Since target is in sorted left half update right to mid.
+                    // Since target is in sorted left half update right to mid - 1.
                     right = mid - 1;
                 } else {
                     left = mid + 1;
