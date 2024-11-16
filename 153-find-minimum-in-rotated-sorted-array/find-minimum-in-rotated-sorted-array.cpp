@@ -17,7 +17,7 @@ public:
         int right = nums.size() - 1;
         int mid = (left + right) / 2;
 
-        while(left != right) {
+        while(left <= right) {
             if ((nums[left] < nums[mid]) and (nums[mid] < nums[right])) {
                 // if search space is sorted then the inflection point 
                 // is the minimum value thus return nums[left].
