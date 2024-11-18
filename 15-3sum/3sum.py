@@ -1,6 +1,6 @@
 class Solution:
     # Time Complexity: O(n^2)
-    # Space Complexity: O(n)
+    # Space Complexity: O(number of unqiue triplets)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         ans = []
         nums.sort()
