@@ -6,7 +6,7 @@ class Solution:
     3. initialise begin = end = 0
     4. while end < len(nums):
         4.2. curSum = curSum + nums[end]
-        4.2. while begin < nums_to_idx.get(nums[end], -1) or end-begin+1 > k:
+        4.2. while begin <= nums_to_idx.get(nums[end], -1) or end-begin+1 > k:
             4.2.1. curSum -= nums[begin]
             4.2.2. increment begin
         4.3. nums_to_idx[nums[end]] = end
