@@ -8,7 +8,7 @@ public:
     // Space complexity: O(n)
     string vectorToString(const vector<int>& row) {
         string row_key = "";
-        for(int num : row) {
+        for(const int& num : row) {
             row_key = row_key + to_string(num) + ",";
         }
         return row_key;
