@@ -24,7 +24,6 @@ public:
             }
         }
         if (negative_count % 2) {
-            cout<< maxNegative<<endl;
             sum = sum - 2*maxNegative;
         }
         return sum;
