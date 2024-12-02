@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Time complexity: O(n)
+    // Space complexity: O(n)
     bool checkIfExist(vector<int>& arr) {
         unordered_set<int> s;
         for(int num : arr) {
