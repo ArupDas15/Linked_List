@@ -1,4 +1,6 @@
 class Solution:
+    # Time complexity: O(n+klogn)
+    # Space Complexity: O(n)
     def pickGifts(self, gifts: List[int], k: int) -> int:
         heap = [-1*elem for elem in gifts]
         heapify(heap)
