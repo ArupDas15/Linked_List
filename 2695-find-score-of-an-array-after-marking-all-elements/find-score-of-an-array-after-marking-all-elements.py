@@ -10,10 +10,9 @@ class Solution:
         score = 0
         count = 0
         visited = [False] * n
-        heap = []
 
-        for i in range(n):
-            heapq.heappush(heap, (nums[i], i))
+        heap  = [(val, idx) for idx,val in enumerate(nums)]
+        heapq.heapify(heap)
         
         while count < n:
             val, idx = heapq.heappop(heap)
