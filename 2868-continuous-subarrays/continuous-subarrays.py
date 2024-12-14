@@ -1,26 +1,23 @@
 class Solution:
-    """
-    Algorithm: Use a frequency dictionary to store the frequency of every element in the sliding window.
-    Begin the sliding window with left=right=0 and run a loop until right < len(nums).
-    Inside the loop, first increment freq[nums[right]] += 1 and then check while max(dict) - min(dict) > 2 increment left and decrement freq
-    Time complexity: O(n)
-    Space complexity: O(1)
-    The sorted map stores elements within the current window. Since the difference between any two elements in a valid 
-    window cannot exceed 2, the maximum number of unique elements (k) possible in the map at any time is 3. Therefore, the space complexity is constant, O(1).
-    """
+
+    # Time complexity: O(nlogn)
+    # Space complexitty: O(n)
     def continuousSubarrays(self, nums: List[int]) -> int:
-        freq = defaultdict(int)
+        min_heap = []
+        max_heap = []
         left = right = 0
-        count = 0
+        count  = 0
 
         while right < len(nums):
-            freq[nums[right]] += 1
+            heapq.heappush(max_heap, (-nums[right], right))
+            heapq.heappush(min_heap, (nums[right], right))
 
-            while max(freq) - min(freq) > 2:
-                freq[nums[left]] -= 1
-                if freq[nums[left]] == 0:
-                    del freq[nums[left]]
-                left +=1
+            while left < right and -max_heap[0][0] - min_heap[0][0] > 2:
+                left += 1
+                while min_heap and min_heap[0][1] < left:
+                    heapq.heappop(min_heap)
+                while max_heap and max_heap[0][1] < left:
+                    heapq.heappop(max_heap)
             
             count += right - left + 1
             right += 1
