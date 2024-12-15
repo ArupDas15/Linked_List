@@ -35,7 +35,7 @@ public:
 
         // Calculate the final average ratio
         for (int i = 0; i < classes.size(); ++i) {
-            final_avg += static_cast<double>(classes[i][0]) / classes[i][1];
+            final_avg += (double)(classes[i][0]) / classes[i][1];
         }
 
         return final_avg / classes.size();
