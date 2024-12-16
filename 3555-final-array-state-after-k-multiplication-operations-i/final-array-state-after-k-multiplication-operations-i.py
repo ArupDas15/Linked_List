@@ -1,4 +1,4 @@
-# time complexity: klog(n)
+# time complexity: O(N + klog(n))
 # space complexity: O(n)
 class Solution:
     def getFinalState(self, nums: List[int], k: int, multiplier: int) -> List[int]:
@@ -6,7 +6,7 @@ class Solution:
         heapq.heapify(heap)
 
         while heap and k > 0:
-            value, idx = heapq.heappop(heap)
+            _, idx = heapq.heappop(heap)
             nums[idx] = nums[idx] * multiplier
             heapq.heappush(heap, (nums[idx], idx))
             k -= 1
