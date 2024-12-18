@@ -1,3 +1,5 @@
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 class Solution:
     def finalPrices(self, prices: List[int]) -> List[int]:
         stack = []
