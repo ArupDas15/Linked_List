@@ -7,7 +7,10 @@ class Solution:
         
         while left <= right:
             mid = (left + right) // 2
-            if (nums[mid] < nums[right]):
+            if (nums[left] < nums[mid]) and (nums[mid] < nums[right]):
+                # We are not checking for equality becuase all the elements in nums is unique
+                return nums[left]
+            elif (nums[mid] < nums[right]):
                 """"nums[mid ... right] is sorted so we move right to mid, 
                     when nums[mid] = mus[right] we have found the inflection point.
                     In the next iteration left = mid + 1 i.e. right + 1 and it will 
