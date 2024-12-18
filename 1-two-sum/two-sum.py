@@ -3,11 +3,11 @@ class Solution:
     # Space complexity: O(n)
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashmap = dict()
-        for index in range(len(nums)):
-            complement = target - nums[index]
-            if complement in hashmap:
-                return [index, hashmap[complement]]
+        for idx, ele in enumerate(nums):
+            if (hashmap.get(target - ele) is not None) and (hashmap[target - ele] != idx):
+                return [idx, hashmap[target-ele]]
             else:
-                hashmap[nums[index]] = index
+                hashmap[ele] = idx
+        
         return []
         
