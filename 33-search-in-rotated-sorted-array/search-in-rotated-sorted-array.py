@@ -8,26 +8,23 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left = 0
         right = len(nums) - 1
-
+        
         while left <= right:
             mid = (left + right) // 2
+            
             if nums[mid] == target:
                 return mid
-            # check if right half is sorted.
-            if nums[mid] < nums[right]:
-                # check if target lies in sorted right half
-                if (target >= nums[mid]) and (target <= nums[right]):
-                    # Narrow the searh space by moving left to mid + 1
-                    left = mid + 1
-                else:
-                    right = mid - 1
-            # if the right half isn;t sorted then the left half is definitely sorted.
-            else:
-                # check if target lies in sorted left half
-                if (target >= nums[left]) and (target <= nums[mid]):
-                    # Narrow the search soace by moving right to mid - 1.
-                    right = mid - 1
-                else:
-                    left = mid + 1
+            else: # Assuming targer lies in nums, determine where target lies
+                if nums[mid] < nums[right]:
+                    # nums[mid ... right] is sorted.
+                    if nums[mid] <= target and target <= nums[right]:
+                        left = mid + 1
+                    else: right = mid - 1
+                else: # left half of the array is sorted.
+                # Assuming target lies in nums, if target does not lie in right 
+                # half of the array it will definitely lie in left half of the array.
+                    if nums[left] <= target and target <= nums[mid]:
+                        right = mid - 1
+                    else:
+                        left = mid + 1
         return -1
-        
