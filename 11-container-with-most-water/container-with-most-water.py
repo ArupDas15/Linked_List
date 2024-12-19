@@ -22,8 +22,12 @@ class Solution:
         maxWaterArea = -float('inf')
 
         while left < right:
-            waterArea = min(height[left], height[right]) * (right-left)
+            waterArea = -float('inf')
+            if height[left] < height[right]: 
+                waterArea = height[left] * (right-left)
+                left += 1
+            else: 
+                waterArea = height[right] * (right-left)
+                right -= 1
             maxWaterArea = max(maxWaterArea, waterArea)
-            if height[left] < height[right]: left += 1
-            else: right -= 1
         return maxWaterArea
