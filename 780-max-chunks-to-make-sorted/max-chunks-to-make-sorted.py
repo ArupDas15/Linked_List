@@ -1,4 +1,11 @@
 class Solution:
+    """
+    If max_so_far == i, it means that the largest element seen so far is equal to the current index. 
+    This is an important property because:
+    The sorted array is a sequence of numbers from 0 to n-1. The number at index i in the sorted array must be i.
+    If max_so_far == i, it means that all elements in the array from index 0 to i are less than or equal to the value of i 
+    (i.e., the chunk ending at index i can be sorted independently of the remaining part of the array).
+    """
     def maxChunksToSorted(self, arr):
         n = len(arr)
         chunks = 0
