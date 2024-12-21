@@ -70,10 +70,12 @@
 |  |
 | ------- |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
+| [3058-maximum-number-of-k-divisible-components](https://github.com/ArupDas15/Linked_List/tree/master/3058-maximum-number-of-k-divisible-components) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
+| [3058-maximum-number-of-k-divisible-components](https://github.com/ArupDas15/Linked_List/tree/master/3058-maximum-number-of-k-divisible-components) |
 ## Breadth-First Search
 |  |
 | ------- |
