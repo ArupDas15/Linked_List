@@ -17,6 +17,7 @@
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0053-maximum-subarray) |
+| [0073-set-matrix-zeroes](https://github.com/ArupDas15/Linked_List/tree/master/0073-set-matrix-zeroes) |
 | [0152-maximum-product-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0152-maximum-product-subarray) |
 | [0238-product-of-array-except-self](https://github.com/ArupDas15/Linked_List/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
@@ -57,6 +58,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0073-set-matrix-zeroes](https://github.com/ArupDas15/Linked_List/tree/master/0073-set-matrix-zeroes) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 ## Binary Search
 |  |
@@ -84,4 +86,8 @@
 |  |
 | ------- |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
+## Matrix
+|  |
+| ------- |
+| [0073-set-matrix-zeroes](https://github.com/ArupDas15/Linked_List/tree/master/0073-set-matrix-zeroes) |
 <!---LeetCode Topics End-->
