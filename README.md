@@ -71,6 +71,7 @@
 ## Tree
 |  |
 | ------- |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/ArupDas15/Linked_List/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
 | [3058-maximum-number-of-k-divisible-components](https://github.com/ArupDas15/Linked_List/tree/master/3058-maximum-number-of-k-divisible-components) |
 ## Depth-First Search
@@ -81,10 +82,12 @@
 ## Breadth-First Search
 |  |
 | ------- |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/ArupDas15/Linked_List/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/ArupDas15/Linked_List/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
 ## Matrix
 |  |
