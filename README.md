@@ -22,6 +22,7 @@
 | [0238-product-of-array-except-self](https://github.com/ArupDas15/Linked_List/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/ArupDas15/Linked_List/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [2358-number-of-ways-to-split-array](https://github.com/ArupDas15/Linked_List/tree/master/2358-number-of-ways-to-split-array) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -36,6 +37,7 @@
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/ArupDas15/Linked_List/tree/master/0238-product-of-array-except-self) |
+| [2358-number-of-ways-to-split-array](https://github.com/ArupDas15/Linked_List/tree/master/2358-number-of-ways-to-split-array) |
 ## Stack
 |  |
 | ------- |
