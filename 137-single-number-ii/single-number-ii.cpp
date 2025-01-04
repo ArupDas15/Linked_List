@@ -9,6 +9,6 @@ public:
         }
         long long int thrice_sum = 3*accumulate(unique_nums_vec.begin(), unique_nums_vec.end(), 0LL);
         long long int arr_sum = accumulate(nums.begin(), nums.end(), 0LL);
-        return (thrice_sum - arr_sum)/2;
+        return (int)((thrice_sum - arr_sum)/2);
     }
 };
