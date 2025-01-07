@@ -101,4 +101,5 @@
 | [0197-rising-temperature](https://github.com/ArupDas15/Linked_List/tree/master/0197-rising-temperature) |
 | [1153-product-sales-analysis-i](https://github.com/ArupDas15/Linked_List/tree/master/1153-product-sales-analysis-i) |
 | [1509-replace-employee-id-with-the-unique-identifier](https://github.com/ArupDas15/Linked_List/tree/master/1509-replace-employee-id-with-the-unique-identifier) |
+| [1801-average-time-of-process-per-machine](https://github.com/ArupDas15/Linked_List/tree/master/1801-average-time-of-process-per-machine) |
 <!---LeetCode Topics End-->
