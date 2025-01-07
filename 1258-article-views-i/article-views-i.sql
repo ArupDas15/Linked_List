@@ -2,9 +2,9 @@
 SELECT 
     distinct(author_id) as id 
 FROM 
-    Views 
+    Views as v
 where 
-    author_id = viewer_id
+    v.author_id = v.viewer_id
 order by 
-    author_id ASC
+    v.author_id ASC
 ;
