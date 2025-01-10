@@ -10,11 +10,13 @@
 | ------- |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/ArupDas15/Linked_List/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/ArupDas15/Linked_List/tree/master/2292-counting-words-with-a-given-prefix) |
 ## String Matching
 |  |
 | ------- |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/ArupDas15/Linked_List/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/ArupDas15/Linked_List/tree/master/2292-counting-words-with-a-given-prefix) |
 ## Array
 |  |
 | ------- |
@@ -25,6 +27,7 @@
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/ArupDas15/Linked_List/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/ArupDas15/Linked_List/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2358-number-of-ways-to-split-array](https://github.com/ArupDas15/Linked_List/tree/master/2358-number-of-ways-to-split-array) |
 ## Divide and Conquer
 |  |
