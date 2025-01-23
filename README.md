@@ -106,6 +106,7 @@
 | ------- |
 | [0197-rising-temperature](https://github.com/ArupDas15/Linked_List/tree/master/0197-rising-temperature) |
 | [0570-managers-with-at-least-5-direct-reports](https://github.com/ArupDas15/Linked_List/tree/master/0570-managers-with-at-least-5-direct-reports) |
+| [0620-not-boring-movies](https://github.com/ArupDas15/Linked_List/tree/master/0620-not-boring-movies) |
 | [1153-product-sales-analysis-i](https://github.com/ArupDas15/Linked_List/tree/master/1153-product-sales-analysis-i) |
 | [1258-article-views-i](https://github.com/ArupDas15/Linked_List/tree/master/1258-article-views-i) |
 | [1415-students-and-examinations](https://github.com/ArupDas15/Linked_List/tree/master/1415-students-and-examinations) |
