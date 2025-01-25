@@ -4,6 +4,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/ArupDas15/Linked_List/tree/master/0075-sort-colors) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/ArupDas15/Linked_List/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 ## String
 |  |
@@ -22,6 +23,7 @@
 | ------- |
 | [0053-maximum-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0053-maximum-subarray) |
 | [0073-set-matrix-zeroes](https://github.com/ArupDas15/Linked_List/tree/master/0073-set-matrix-zeroes) |
+| [0075-sort-colors](https://github.com/ArupDas15/Linked_List/tree/master/0075-sort-colors) |
 | [0152-maximum-product-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0152-maximum-product-subarray) |
 | [0238-product-of-array-except-self](https://github.com/ArupDas15/Linked_List/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
@@ -75,6 +77,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/ArupDas15/Linked_List/tree/master/0075-sort-colors) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 ## Tree
 |  |
