@@ -9,6 +9,7 @@
 ## String
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/ArupDas15/Linked_List/tree/master/0242-valid-anagram) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/ArupDas15/Linked_List/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
@@ -72,6 +73,7 @@
 |  |
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/ArupDas15/Linked_List/tree/master/0073-set-matrix-zeroes) |
+| [0242-valid-anagram](https://github.com/ArupDas15/Linked_List/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
 ## Binary Search
@@ -82,6 +84,7 @@
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/ArupDas15/Linked_List/tree/master/0075-sort-colors) |
+| [0242-valid-anagram](https://github.com/ArupDas15/Linked_List/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 ## Tree
 |  |
