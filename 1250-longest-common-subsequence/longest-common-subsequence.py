@@ -1,12 +1,13 @@
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         dp = [[0 for _ in range(len(text2)+1)] for _ in range(len(text1)+1)]
-        
-        # BASE CASE: using index shiting technique.
-        for i in range(len(text1)):
-            dp[i][0] = 0
-        for j in range(len(text2)):
-            dp[0][j] = 0 
+        # prev = [0 for _ in range(len(text2)+1)]
+        # cur = [0 for _ in range(len(text2)+1)]
+        # BASE CASE: using index shifting technique.
+        # for i in range(len(text1)):
+        #     dp[i][0] = 0
+        # for j in range(len(text2)):
+        #     dp[0][j] = 0 
         # RECURSION CASES
         for i in range(1, len(text1)+1):
             for j in range(1, len(text2)+1):
