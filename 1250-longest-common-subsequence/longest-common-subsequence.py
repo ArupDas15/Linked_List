@@ -7,5 +7,5 @@ class Solution:
         return dp[ind1][ind2]
     
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
-        dp = [[-1] * len(text2) for _ in range(len(text1))]
+        dp = [[-1 for _ in range(len(text2))] for _ in range(len(text1))]
         return self.lcs(len(text1) - 1, len(text2) - 1, text1, text2, dp)
