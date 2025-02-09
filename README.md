@@ -64,6 +64,7 @@
 |  |
 | ------- |
 | [0191-number-of-1-bits](https://github.com/ArupDas15/Linked_List/tree/master/0191-number-of-1-bits) |
+| [0201-bitwise-and-of-numbers-range](https://github.com/ArupDas15/Linked_List/tree/master/0201-bitwise-and-of-numbers-range) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/ArupDas15/Linked_List/tree/master/0371-sum-of-two-integers) |
 ## Math
