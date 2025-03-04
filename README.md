@@ -83,6 +83,7 @@
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
+| [0278-first-bad-version](https://github.com/ArupDas15/Linked_List/tree/master/0278-first-bad-version) |
 ## Sorting
 |  |
 | ------- |
@@ -130,4 +131,8 @@
 |  |
 | ------- |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
+## Interactive
+|  |
+| ------- |
+| [0278-first-bad-version](https://github.com/ArupDas15/Linked_List/tree/master/0278-first-bad-version) |
 <!---LeetCode Topics End-->
