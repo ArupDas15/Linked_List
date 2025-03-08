@@ -15,6 +15,7 @@
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/ArupDas15/Linked_List/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/ArupDas15/Linked_List/tree/master/2292-counting-words-with-a-given-prefix) |
+| [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/ArupDas15/Linked_List/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/ArupDas15/Linked_List/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 ## String Matching
 |  |
@@ -131,6 +132,7 @@
 |  |
 | ------- |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
+| [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/ArupDas15/Linked_List/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 ## Interactive
 |  |
 | ------- |
