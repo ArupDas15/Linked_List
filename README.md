@@ -37,6 +37,7 @@
 | [2292-counting-words-with-a-given-prefix](https://github.com/ArupDas15/Linked_List/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2358-number-of-ways-to-split-array](https://github.com/ArupDas15/Linked_List/tree/master/2358-number-of-ways-to-split-array) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/ArupDas15/Linked_List/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
+| [3483-alternating-groups-ii](https://github.com/ArupDas15/Linked_List/tree/master/3483-alternating-groups-ii) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -133,6 +134,7 @@
 | ------- |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/ArupDas15/Linked_List/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [3483-alternating-groups-ii](https://github.com/ArupDas15/Linked_List/tree/master/3483-alternating-groups-ii) |
 ## Interactive
 |  |
 | ------- |
