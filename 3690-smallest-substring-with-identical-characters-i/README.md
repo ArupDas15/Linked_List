@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/smallest-substring-with-identical-characters-i">Smallest Substring With Identical Characters I</a></h2> <img src='https://img.shields.io/badge/Difficulty-Hard-red' alt='Difficulty: Hard' /><hr><p>You are given a binary string <code>s</code> of length <code>n</code> and an integer <code>numOps</code>.</p>
+<h2><a href="https://leetcode.com/problems/smallest-substring-with-identical-characters-i">3690. Smallest Substring With Identical Characters I</a></h2><h3>Hard</h3><hr><p>You are given a binary string <code>s</code> of length <code>n</code> and an integer <code>numOps</code>.</p>
 
 <p>You are allowed to perform the following operation on <code>s</code> <strong>at most</strong> <code>numOps</code> times:</p>
 
