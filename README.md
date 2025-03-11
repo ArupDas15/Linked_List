@@ -38,6 +38,7 @@
 | [2358-number-of-ways-to-split-array](https://github.com/ArupDas15/Linked_List/tree/master/2358-number-of-ways-to-split-array) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/ArupDas15/Linked_List/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3483-alternating-groups-ii](https://github.com/ArupDas15/Linked_List/tree/master/3483-alternating-groups-ii) |
+| [3690-smallest-substring-with-identical-characters-i](https://github.com/ArupDas15/Linked_List/tree/master/3690-smallest-substring-with-identical-characters-i) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -86,6 +87,7 @@
 | ------- |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/ArupDas15/Linked_List/tree/master/0278-first-bad-version) |
+| [3690-smallest-substring-with-identical-characters-i](https://github.com/ArupDas15/Linked_List/tree/master/3690-smallest-substring-with-identical-characters-i) |
 ## Sorting
 |  |
 | ------- |
@@ -139,4 +141,8 @@
 |  |
 | ------- |
 | [0278-first-bad-version](https://github.com/ArupDas15/Linked_List/tree/master/0278-first-bad-version) |
+## Enumeration
+|  |
+| ------- |
+| [3690-smallest-substring-with-identical-characters-i](https://github.com/ArupDas15/Linked_List/tree/master/3690-smallest-substring-with-identical-characters-i) |
 <!---LeetCode Topics End-->
