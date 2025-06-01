@@ -48,6 +48,7 @@
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0053-maximum-subarray) |
+| [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0152-maximum-product-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0152-maximum-product-subarray) |
 | [1250-longest-common-subsequence](https://github.com/ArupDas15/Linked_List/tree/master/1250-longest-common-subsequence) |
 ## Prefix Sum
@@ -73,6 +74,7 @@
 ## Math
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/ArupDas15/Linked_List/tree/master/0371-sum-of-two-integers) |
 ## Hash Table
@@ -97,6 +99,7 @@
 ## Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/ArupDas15/Linked_List/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
 | [3058-maximum-number-of-k-divisible-components](https://github.com/ArupDas15/Linked_List/tree/master/3058-maximum-number-of-k-divisible-components) |
@@ -113,6 +116,7 @@
 ## Binary Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/ArupDas15/Linked_List/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
 ## Matrix
@@ -145,4 +149,8 @@
 |  |
 | ------- |
 | [3690-smallest-substring-with-identical-characters-i](https://github.com/ArupDas15/Linked_List/tree/master/3690-smallest-substring-with-identical-characters-i) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 <!---LeetCode Topics End-->
