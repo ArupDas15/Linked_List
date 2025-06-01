@@ -26,6 +26,9 @@ public:
         //     cat[i] += (cat[j]*cat[i-j-1]);
         // }
         // return cat[n];
+        
+        // time Complexity: O(n)
+        // space complexity: O(1)
         return binCoeff(2*n,n)/(n+1);
     }
 };
