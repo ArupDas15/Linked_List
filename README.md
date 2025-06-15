@@ -32,6 +32,7 @@
 | [0152-maximum-product-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0152-maximum-product-subarray) |
 | [0238-product-of-array-except-self](https://github.com/ArupDas15/Linked_List/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
+| [0416-partition-equal-subset-sum](https://github.com/ArupDas15/Linked_List/tree/master/0416-partition-equal-subset-sum) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/ArupDas15/Linked_List/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/ArupDas15/Linked_List/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -50,6 +51,7 @@
 | [0053-maximum-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0053-maximum-subarray) |
 | [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0152-maximum-product-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0152-maximum-product-subarray) |
+| [0416-partition-equal-subset-sum](https://github.com/ArupDas15/Linked_List/tree/master/0416-partition-equal-subset-sum) |
 | [1250-longest-common-subsequence](https://github.com/ArupDas15/Linked_List/tree/master/1250-longest-common-subsequence) |
 ## Prefix Sum
 |  |
