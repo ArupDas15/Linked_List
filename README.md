@@ -28,6 +28,7 @@
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0053-maximum-subarray) |
+| [0066-plus-one](https://github.com/ArupDas15/Linked_List/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/ArupDas15/Linked_List/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/ArupDas15/Linked_List/tree/master/0075-sort-colors) |
 | [0152-maximum-product-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0152-maximum-product-subarray) |
@@ -78,6 +79,7 @@
 ## Math
 |  |
 | ------- |
+| [0066-plus-one](https://github.com/ArupDas15/Linked_List/tree/master/0066-plus-one) |
 | [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/ArupDas15/Linked_List/tree/master/0371-sum-of-two-integers) |
