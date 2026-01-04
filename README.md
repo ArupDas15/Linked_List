@@ -36,6 +36,7 @@
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0416-partition-equal-subset-sum](https://github.com/ArupDas15/Linked_List/tree/master/0416-partition-equal-subset-sum) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/ArupDas15/Linked_List/tree/master/0961-n-repeated-element-in-size-2n-array) |
+| [1390-four-divisors](https://github.com/ArupDas15/Linked_List/tree/master/1390-four-divisors) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/ArupDas15/Linked_List/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/ArupDas15/Linked_List/tree/master/2079-delete-duplicate-folders-in-system) |
@@ -85,6 +86,7 @@
 | [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/ArupDas15/Linked_List/tree/master/0371-sum-of-two-integers) |
+| [1390-four-divisors](https://github.com/ArupDas15/Linked_List/tree/master/1390-four-divisors) |
 ## Hash Table
 |  |
 | ------- |
