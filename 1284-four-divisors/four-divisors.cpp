@@ -18,15 +18,25 @@ public:
         // Ans = 1+p+p^2+p^3
         for(int idx = 0; idx < nums.size(); idx++) {
             int n = nums[idx];
-            if (isCube(n) && isPrime(round(cbrt(n)))) {
-                sum = sum + 1 + round(cbrt(n)) + round(cbrt(n))*round(cbrt(n)) + n;
+            int p = round(cbrt(n));
+            if (isCube(n) && isPrime(p)) {
+                sum = sum + 1 + p + p*p + n;
             }
         }
         // Case 2: n= p*q where p and q are prime e.g. 6 = 2*3, 10=2*5
         // Ans = 1+p+q+n
+        // If you have a number \(n\), any divisor \(i\) must have a 
+        // "partner" \(j\) such that:
+        // \(i\times j=n\quad \text{or}\quad j=\frac{n}{i}\)
+        // Mathematically, it is impossible for both \(i\) and \(j\) to be 
+        // greater than \(\sqrt{n}\). If \(i>\sqrt{n}\) and \(j>\sqrt{n}\), 
+        // then \(i\times j\) would be greater than \(n\).Therefore, in every 
+        // divisor pair, at least one divisor must be less than or equal to 
+        // \(\sqrt{n}\)
         for(int idx = 0; idx < nums.size(); idx++) {
             int n = nums[idx];
-            for(int i = 2; i <= sqrt(n);i++) {
+            // Multiplicatin is faster than sqrt().
+            for(int i = 2; i*i <= n;i++) {
                 if(n % i == 0 && n/i != i && isPrime(i) && isPrime(n/i)) {
                     sum = sum + 1 + i + (n/i) + n;
                     break; 
