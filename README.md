@@ -39,6 +39,7 @@
 | [1390-four-divisors](https://github.com/ArupDas15/Linked_List/tree/master/1390-four-divisors) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/ArupDas15/Linked_List/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [1975-maximum-matrix-sum](https://github.com/ArupDas15/Linked_List/tree/master/1975-maximum-matrix-sum) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/ArupDas15/Linked_List/tree/master/2079-delete-duplicate-folders-in-system) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/ArupDas15/Linked_List/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2358-number-of-ways-to-split-array](https://github.com/ArupDas15/Linked_List/tree/master/2358-number-of-ways-to-split-array) |
@@ -135,6 +136,7 @@
 |  |
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/ArupDas15/Linked_List/tree/master/0073-set-matrix-zeroes) |
+| [1975-maximum-matrix-sum](https://github.com/ArupDas15/Linked_List/tree/master/1975-maximum-matrix-sum) |
 ## Database
 |  |
 | ------- |
@@ -173,4 +175,8 @@
 |  |
 | ------- |
 | [2079-delete-duplicate-folders-in-system](https://github.com/ArupDas15/Linked_List/tree/master/2079-delete-duplicate-folders-in-system) |
+## Greedy
+|  |
+| ------- |
+| [1975-maximum-matrix-sum](https://github.com/ArupDas15/Linked_List/tree/master/1975-maximum-matrix-sum) |
 <!---LeetCode Topics End-->
