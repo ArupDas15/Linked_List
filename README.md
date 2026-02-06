@@ -12,6 +12,7 @@
 | [0242-valid-anagram](https://github.com/ArupDas15/Linked_List/tree/master/0242-valid-anagram) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
 | [1250-longest-common-subsequence](https://github.com/ArupDas15/Linked_List/tree/master/1250-longest-common-subsequence) |
+| [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/ArupDas15/Linked_List/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/ArupDas15/Linked_List/tree/master/2079-delete-duplicate-folders-in-system) |
@@ -36,6 +37,7 @@
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0416-partition-equal-subset-sum](https://github.com/ArupDas15/Linked_List/tree/master/0416-partition-equal-subset-sum) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/ArupDas15/Linked_List/tree/master/0961-n-repeated-element-in-size-2n-array) |
+| [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 | [1390-four-divisors](https://github.com/ArupDas15/Linked_List/tree/master/1390-four-divisors) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/ArupDas15/Linked_List/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
@@ -102,6 +104,7 @@
 | ------- |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/ArupDas15/Linked_List/tree/master/0278-first-bad-version) |
+| [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 | [3690-smallest-substring-with-identical-characters-i](https://github.com/ArupDas15/Linked_List/tree/master/3690-smallest-substring-with-identical-characters-i) |
 ## Sorting
 |  |
@@ -109,6 +112,7 @@
 | [0075-sort-colors](https://github.com/ArupDas15/Linked_List/tree/master/0075-sort-colors) |
 | [0242-valid-anagram](https://github.com/ArupDas15/Linked_List/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
+| [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 ## Tree
 |  |
 | ------- |
@@ -170,6 +174,7 @@
 ## Trie
 |  |
 | ------- |
+| [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/ArupDas15/Linked_List/tree/master/2079-delete-duplicate-folders-in-system) |
 ## Hash Function
 |  |
@@ -179,4 +184,8 @@
 |  |
 | ------- |
 | [1975-maximum-matrix-sum](https://github.com/ArupDas15/Linked_List/tree/master/1975-maximum-matrix-sum) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 <!---LeetCode Topics End-->
