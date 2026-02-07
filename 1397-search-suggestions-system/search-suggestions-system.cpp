@@ -28,18 +28,10 @@ void insertKey(Trienode* root, const string& key) {
     parentNode->isWordEnd = true;
 }
 
-bool isLastNode(Trienode* root) {
-    for(int i = 0; i < ALPHABET_SIZE; i++) {
-        if (root->children[i] != nullptr) {
-            return false;
-        }
-    }
-    return true;
-}
 void suggestionsRec(Trienode* root, string currPrefix, vector<string>& ans) {
     if (ans.size() == 3) return;
     if (root->isWordEnd) ans.push_back(currPrefix);
-    if (isLastNode(root)) return;
+
     for (int i = 0; i < ALPHABET_SIZE && ans.size() < 3; i++) {
         if (root->children[i]) {
             currPrefix.push_back('a' + i);
@@ -80,14 +72,9 @@ public:
                 continue;
             }    
             bool isWord = pNode->isWordEnd;
-            //bool last = isLastNode(pNode);
-            // if query is a word and does not have children
-            // if(isWord && last) {
-            //     ans.push_back(query);
-            // }
-            // else {
-                suggestionsRec(pNode, query, ans);
-            // }
+
+            suggestionsRec(pNode, query, ans);
+            
             res.push_back(ans);
         }
         return res;
