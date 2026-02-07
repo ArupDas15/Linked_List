@@ -68,7 +68,7 @@ public:
             }
             if (!found) {           
                 // add empty suggestion for the query string
-                res.push_back(ans);
+                res.push_back({});
                 continue;
             }    
             bool isWord = pNode->isWordEnd;
