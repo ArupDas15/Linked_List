@@ -80,14 +80,14 @@ public:
                 continue;
             }    
             bool isWord = pNode->isWordEnd;
-            bool last = isLastNode(pNode);
+            //bool last = isLastNode(pNode);
             // if query is a word and does not have children
-            if(isWord && last) {
-                ans.push_back(query);
-            }
-            else {
+            // if(isWord && last) {
+            //     ans.push_back(query);
+            // }
+            // else {
                 suggestionsRec(pNode, query, ans);
-            }
+            // }
             res.push_back(ans);
         }
         return res;
