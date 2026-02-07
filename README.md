@@ -9,6 +9,7 @@
 ## String
 |  |
 | ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/ArupDas15/Linked_List/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0242-valid-anagram](https://github.com/ArupDas15/Linked_List/tree/master/0242-valid-anagram) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
 | [1250-longest-common-subsequence](https://github.com/ArupDas15/Linked_List/tree/master/1250-longest-common-subsequence) |
@@ -123,6 +124,7 @@
 ## Depth-First Search
 |  |
 | ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/ArupDas15/Linked_List/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0226-invert-binary-tree](https://github.com/ArupDas15/Linked_List/tree/master/0226-invert-binary-tree) |
 | [3058-maximum-number-of-k-divisible-components](https://github.com/ArupDas15/Linked_List/tree/master/3058-maximum-number-of-k-divisible-components) |
 ## Breadth-First Search
@@ -174,6 +176,7 @@
 ## Trie
 |  |
 | ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/ArupDas15/Linked_List/tree/master/0211-design-add-and-search-words-data-structure) |
 | [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/ArupDas15/Linked_List/tree/master/2079-delete-duplicate-folders-in-system) |
 ## Hash Function
@@ -188,4 +191,8 @@
 |  |
 | ------- |
 | [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
+## Design
+|  |
+| ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/ArupDas15/Linked_List/tree/master/0211-design-add-and-search-words-data-structure) |
 <!---LeetCode Topics End-->
