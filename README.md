@@ -12,6 +12,7 @@
 | [0211-design-add-and-search-words-data-structure](https://github.com/ArupDas15/Linked_List/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0242-valid-anagram](https://github.com/ArupDas15/Linked_List/tree/master/0242-valid-anagram) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
+| [1044-longest-duplicate-substring](https://github.com/ArupDas15/Linked_List/tree/master/1044-longest-duplicate-substring) |
 | [1250-longest-common-subsequence](https://github.com/ArupDas15/Linked_List/tree/master/1250-longest-common-subsequence) |
 | [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 | [1524-string-matching-in-an-array](https://github.com/ArupDas15/Linked_List/tree/master/1524-string-matching-in-an-array) |
@@ -105,6 +106,7 @@
 | ------- |
 | [0268-missing-number](https://github.com/ArupDas15/Linked_List/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/ArupDas15/Linked_List/tree/master/0278-first-bad-version) |
+| [1044-longest-duplicate-substring](https://github.com/ArupDas15/Linked_List/tree/master/1044-longest-duplicate-substring) |
 | [1268-search-suggestions-system](https://github.com/ArupDas15/Linked_List/tree/master/1268-search-suggestions-system) |
 | [3690-smallest-substring-with-identical-characters-i](https://github.com/ArupDas15/Linked_List/tree/master/3690-smallest-substring-with-identical-characters-i) |
 ## Sorting
@@ -159,6 +161,7 @@
 |  |
 | ------- |
 | [0438-find-all-anagrams-in-a-string](https://github.com/ArupDas15/Linked_List/tree/master/0438-find-all-anagrams-in-a-string) |
+| [1044-longest-duplicate-substring](https://github.com/ArupDas15/Linked_List/tree/master/1044-longest-duplicate-substring) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/ArupDas15/Linked_List/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [3483-alternating-groups-ii](https://github.com/ArupDas15/Linked_List/tree/master/3483-alternating-groups-ii) |
 ## Interactive
@@ -182,6 +185,7 @@
 ## Hash Function
 |  |
 | ------- |
+| [1044-longest-duplicate-substring](https://github.com/ArupDas15/Linked_List/tree/master/1044-longest-duplicate-substring) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/ArupDas15/Linked_List/tree/master/2079-delete-duplicate-folders-in-system) |
 ## Greedy
 |  |
@@ -195,4 +199,12 @@
 |  |
 | ------- |
 | [0211-design-add-and-search-words-data-structure](https://github.com/ArupDas15/Linked_List/tree/master/0211-design-add-and-search-words-data-structure) |
+## Rolling Hash
+|  |
+| ------- |
+| [1044-longest-duplicate-substring](https://github.com/ArupDas15/Linked_List/tree/master/1044-longest-duplicate-substring) |
+## Suffix Array
+|  |
+| ------- |
+| [1044-longest-duplicate-substring](https://github.com/ArupDas15/Linked_List/tree/master/1044-longest-duplicate-substring) |
 <!---LeetCode Topics End-->
