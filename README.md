@@ -62,6 +62,7 @@
 | [0096-unique-binary-search-trees](https://github.com/ArupDas15/Linked_List/tree/master/0096-unique-binary-search-trees) |
 | [0152-maximum-product-subarray](https://github.com/ArupDas15/Linked_List/tree/master/0152-maximum-product-subarray) |
 | [0416-partition-equal-subset-sum](https://github.com/ArupDas15/Linked_List/tree/master/0416-partition-equal-subset-sum) |
+| [0799-champagne-tower](https://github.com/ArupDas15/Linked_List/tree/master/0799-champagne-tower) |
 | [1250-longest-common-subsequence](https://github.com/ArupDas15/Linked_List/tree/master/1250-longest-common-subsequence) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/ArupDas15/Linked_List/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 ## Prefix Sum
