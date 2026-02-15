@@ -22,22 +22,8 @@ public:
         }
         for(int i = a.length()-1; i >= 0; i--) {
             sum = CHAR_TO_INT(a[i]) + CHAR_TO_INT(b[i]) + carry;
-            char ops_res;
-            if (sum == 3) {
-                carry = 1;
-                ops_res = '1'; 
-            } else if( sum == 2) {
-                carry = 1;
-                ops_res = '0';
-            } else if( sum == 1) {
-                carry = 0;
-                ops_res = '1';
-            } else { // sum = 0
-                carry = 0;
-                ops_res = '0';
-            }
-            sum = 0;
-            ans.push_back(ops_res);            
+            ans.push_back((sum % 2) + '0');
+            carry = sum/2;
         }
         if (carry == 1) ans.push_back('1');
         reverse(ans.begin(), ans.end());
