@@ -11,24 +11,20 @@
  */
 class Solution {
 public:
-    int solve(TreeNode* root, int &res){
-        // Base Case.
-        if(root == nullptr)
-            return 0;
-        // Hypothesis
-        int left = solve(root->left, res);
-        int right = solve(root->right, res);
-        int temp_ans = 1 + max(left, right);
-        int ans = max(temp_ans, 1 + left + right);
-        res = max(res, ans);
-        // Pass the maximum subtree length higher up.
-        return temp_ans;
+    int solve(TreeNode* root, int& global_max) {
+        if (!root) return 0;
+        int left = 0;
+        int right = 0;
+        // Recurse if left child exists
+        if (root->left) left = solve(root->left, global_max);
+        // Recurse if right child exists
+        if (root->right) right = solve(root->right, global_max);
+        global_max = max(max(max(left, right), left+right), global_max);
+        return 1+max(left, right);
     }
     int diameterOfBinaryTree(TreeNode* root) {
-        int res = INT_MIN;
-        solve(root, res);
-        // Number of edges between any two nodes in a Directed Acyclic Graph
-        // like binary tree is number of nodes in the path - 1.
-        return res-1;
+        int global_max = 0;
+        solve(root, global_max);
+        return global_max;
     }
 };
