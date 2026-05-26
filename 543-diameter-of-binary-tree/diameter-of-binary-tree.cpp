@@ -19,12 +19,12 @@ public:
         if (root->left) left = solve(root->left, global_max);
         // Recurse if right child exists
         if (root->right) right = solve(root->right, global_max);
-        global_max = max(max(1+max(left, right), 1+left+right), global_max);
+        global_max = max(max(max(left, right), left+right), global_max);
         return 1+max(left, right);
     }
     int diameterOfBinaryTree(TreeNode* root) {
         int global_max = 0;
         solve(root, global_max);
-        return global_max-1;
+        return global_max;
     }
 };
