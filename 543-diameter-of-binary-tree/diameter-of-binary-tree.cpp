@@ -12,17 +12,15 @@
 class Solution {
 public:
     int solve(TreeNode* root, int& global_max) {
-        if (!root) return 0;
         int left = 0;
         int right = 0;
-        // Recurse if left child exists
-        if (root->left) left = solve(root->left, global_max);
-        // Recurse if right child exists
-        if (root->right) right = solve(root->right, global_max);
-        global_max = max({left, right, left+right, global_max});
-        return 1+max(left, right);
-    }
+        if(root->left) left = solve(root->left, global_max);
+        if(root->right) right = solve(root->right, global_max);
+        global_max = max(left+right, global_max);
+        return 1+max(left,right);
+    } 
     int diameterOfBinaryTree(TreeNode* root) {
+        if(!root) return 0;
         int global_max = 0;
         solve(root, global_max);
         return global_max;
