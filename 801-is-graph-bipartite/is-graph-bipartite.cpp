@@ -7,6 +7,10 @@ public:
             for(int nei : graph[node]) {
                 if (color[nei] == 0) {
                    DFS(graph, nei, color, expected_color, set_status);
+                   if (!set_status) {
+                    // if a conflict was found deep in that subtree - STOP all other recursive DFS calls
+                    return;
+                   } 
                 } else {
                     // check for conflict
                     if (color[nei] == color[node]) {
