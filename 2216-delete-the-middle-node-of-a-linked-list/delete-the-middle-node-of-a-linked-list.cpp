@@ -20,15 +20,12 @@ public:
             n++;
         }
         curr=head;
-        for(int i=0;i<n/2;i++){
-            if(i==(n/2)-1) {
-                ListNode* temp=curr->next;
-                curr->next=curr->next->next;
-                delete temp;
-                break;
-            }
+        for(int i=0;i<n/2-1;i++){
             curr=curr->next;
         }
+        ListNode* temp=curr->next;
+        curr->next=curr->next->next;
+        delete temp;
         return head;
     }
 };
