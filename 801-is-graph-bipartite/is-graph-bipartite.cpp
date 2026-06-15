@@ -31,7 +31,7 @@ public:
         for(int i = 0; i < n; i++) {
             // check if a node is unvisited.
             if (color[i] == 0) {
-                // Run DFS from node i
+                // Run DFS from node i (new component)
                 int expected_color = -1;
                 bool set_status = true;
                 DFS(graph, i, color, expected_color, set_status);
